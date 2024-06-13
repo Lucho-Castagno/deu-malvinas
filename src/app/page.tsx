@@ -4,91 +4,63 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.topSection}>
+        <div className={styles.text}>
+          
+          <p>Descubre la memoria viva de los héroes de las Malvinas. Explora este recurso para una comprensión más profunda de un evento histórico crucial para Argentina y el Reino Unido</p>
+        </div>
+        <div className={styles.map}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345095963!2d144.95373531531843!3d-37.81627937975156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f1b8c5e9cbbd!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1594273325454!5m2!1sen!2sau"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            style={{ border: 0 }}
+            allowFullScreen={false}
+            aria-hidden="false"
+            tabIndex={0}
+          ></iframe>
         </div>
       </div>
-
-      <div className={styles.center}>
+      <div className={styles.subtitleSection}>
+        <p className={styles.subtitle}>Veteranos que pelearon en Malvinas</p>
+        <img src="/soldado.jpg" alt="Soldado" className={styles.subtitleImage} />
+      </div>
+      <div className={styles.photoGallery}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/photo1.jpg"
+          alt="Foto 1"
+          width={200}
+          height={200}
+          className={styles.photo}
+        />
+        <Image
+          src="/photo2.jpg"
+          alt="Foto 2"
+          width={200}
+          height={200}
+          className={styles.photo}
+        />
+        <Image
+          src="/photo3.jpg"
+          alt="Foto 3"
+          width={200}
+          height={200}
+          className={styles.photo}
         />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.finalSection}>
+        <Image
+          src="/argentina.jpg"
+          alt="Argentina"
+          width={200}
+          height={200}
+          className={styles.finalImage}
+        />
+        <p className={styles.finalText}>
+          El conflicto de las Malvinas, ocurrido en 1982 entre Argentina y el Reino Unido, dejó una profunda huella en la historia contemporánea. Esta guerra, que se libró por el control de las Islas Malvinas, resultó en la pérdida de vidas humanas y marcó un hito en la historia militar y política de ambas naciones.
+          A través de imágenes impactantes y relatos emotivos, honramos la valentía de aquellos que lucharon en este conflicto.
+        </p>
       </div>
     </main>
   );
