@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Header.module.css';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -8,12 +9,8 @@ export default function Header() {
         <div className={styles.logo}>
           <Link href="/" legacyBehavior>
             <a className={styles.logoLink} title="Inicio">
-              <img
-                src="/logo.png"
-                alt="Logo de Memorias de Malvinas"
-                className={styles.logoImage}
-              />
-              <span className={styles.logoText}>Memorias de Malvinas</span>
+            <Image src="/logo.png" alt="Memorias de Malvinas" width={200} height={50} className={styles.logo} />
+              {/*<span className={styles.logoText}>Memorias de Malvinas</span>}*/}
             </a>
           </Link>
         </div>

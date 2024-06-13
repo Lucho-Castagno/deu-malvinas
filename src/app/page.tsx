@@ -6,7 +6,6 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.topSection}>
         <div className={styles.text}>
-          
           <p>Descubre la memoria viva de los héroes de las Malvinas. Explora este recurso para una comprensión más profunda de un evento histórico crucial para Argentina y el Reino Unido</p>
         </div>
         <div className={styles.map}>
@@ -24,8 +23,9 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.subtitleSection}>
-        <p className={styles.subtitle}>Veteranos que pelearon en Malvinas</p>
-        <img src="/soldado.jpg" alt="Soldado" className={styles.subtitleImage} />
+        <p className={styles.subtitle}>Veteranos que lucharon en Malvinas</p>
+        <Image src="/soldado.jpg" alt="Soldado" width={200}
+          height={200} className={styles.subtitleImage} />
       </section>
       <section className={styles.photoGallery}>
         <Image

@@ -17,13 +17,16 @@ export default function Footer() {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <img src="/instagram.svg" alt="Instagram" className={styles.socialIcon} />
             </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/youtube.svg" alt="Yourube" className={styles.socialIcon} />
+            </a>
           </div>
         </section>
         <section className={styles.rightSection}>
           <div className={styles.column}>
             <h3>Nosotros</h3>
             <ul>
-              <li><Link href="/acerca" title="Acerca de Memorias de Malvinas">Acerca de Memorias de Malvinas</Link></li>
+              <li><Link href="/nosotros" title="Acerca de Memorias de Malvinas">Acerca de Memorias de Malvinas</Link></li>
               <li><Link href="/blog" title="Blog">Blog</Link></li>
             </ul>
           </div>
