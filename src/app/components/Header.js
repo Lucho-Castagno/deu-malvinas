@@ -3,53 +3,55 @@ import styles from './Header.module.css';
 
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} role="banner">
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Link href="/" className={styles.logoLink}>
-            <img
-              src="/logo.png"
-              alt="Logo"
-              className={styles.logoImage}
-            />
-            <span className={styles.logoText}>Memorias de Malvinas</span>
+          <Link href="/" legacyBehavior>
+            <a className={styles.logoLink} title="Inicio">
+              <img
+                src="/logo.png"
+                alt="Logo de Memorias de Malvinas"
+                className={styles.logoImage}
+              />
+              <span className={styles.logoText}>Memorias de Malvinas</span>
+            </a>
           </Link>
         </div>
-        <nav className={styles.nav}>
+        <nav className={styles.nav} role="navigation" aria-label="Menú principal">
           <ul className={styles.navList}>
             <li className={styles.navItem}>
-              <Link href="/" className={styles.navLink}>
-                Inicio
+              <Link href="/" legacyBehavior>
+                <a className={styles.navLink} title="Inicio">Inicio</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/veteranos" className={styles.navLink}>
-                Veteranos
+              <Link href="/veteranos" legacyBehavior>
+                <a className={styles.navLink} title="Veteranos">Veteranos</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/historias" className={styles.navLink}>
-                Historias
+              <Link href="/historias" legacyBehavior>
+                <a className={styles.navLink} title="Historias">Historias</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/mapa" className={styles.navLink}>
-                Mapa
+              <Link href="/mapa" legacyBehavior>
+                <a className={styles.navLink} title="Mapa">Mapa</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/recursos" className={styles.navLink}>
-                Recursos
+              <Link href="/recursos" legacyBehavior>
+                <a className={styles.navLink} title="Recusros">Recursos</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/nosotros" className={styles.navLink}>
-                Nosotros
+              <Link href="/nosotros" legacyBehavior>
+                <a className={styles.navLink} title="Nosotros">Nosotros</a>
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/personalizacion" className={styles.navLink}>
-                Personalización
+              <Link href="/personalizacion" legacyBehavior>
+                <a className={styles.navLink} title="Personalización">Personalización</a>
               </Link>
             </li>
           </ul>

@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.topSection}>
+      <section className={styles.topSection}>
         <div className={styles.text}>
           
           <p>Descubre la memoria viva de los héroes de las Malvinas. Explora este recurso para una comprensión más profunda de un evento histórico crucial para Argentina y el Reino Unido</p>
@@ -19,14 +19,15 @@ export default function Home() {
             allowFullScreen={false}
             aria-hidden="false"
             tabIndex={0}
+            title="Mapa de la memoria viva de los Heroes de Malvinas. Se encuentran los hechos principales y donde luchó cada veterano"
           ></iframe>
         </div>
-      </div>
-      <div className={styles.subtitleSection}>
+      </section>
+      <section className={styles.subtitleSection}>
         <p className={styles.subtitle}>Veteranos que pelearon en Malvinas</p>
         <img src="/soldado.jpg" alt="Soldado" className={styles.subtitleImage} />
-      </div>
-      <div className={styles.photoGallery}>
+      </section>
+      <section className={styles.photoGallery}>
         <Image
           src="/photo1.jpg"
           alt="Foto 1"
@@ -48,8 +49,8 @@ export default function Home() {
           height={200}
           className={styles.photo}
         />
-      </div>
-      <div className={styles.finalSection}>
+      </section>
+      <section className={styles.finalSection}>
         <Image
           src="/argentina.jpg"
           alt="Argentina"
@@ -61,7 +62,7 @@ export default function Home() {
           El conflicto de las Malvinas, ocurrido en 1982 entre Argentina y el Reino Unido, dejó una profunda huella en la historia contemporánea. Esta guerra, que se libró por el control de las Islas Malvinas, resultó en la pérdida de vidas humanas y marcó un hito en la historia militar y política de ambas naciones.
           A través de imágenes impactantes y relatos emotivos, honramos la valentía de aquellos que lucharon en este conflicto.
         </p>
-      </div>
+      </section>
     </main>
   );
 }

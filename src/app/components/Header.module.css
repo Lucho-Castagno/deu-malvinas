@@ -1,77 +1,76 @@
 .header {
-    background-color: #006769;
-    color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logoLink {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .logoImage {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5rem;
-  }
-  
-  .logoText {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .nav {
-    display: flex;
-  }
-  
+  background-color: #006769;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logoImage {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.logoText {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  margin-left: 1rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
   .navList {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    align-items: flex-end;
   }
-  
+
   .navItem {
-    margin-left: 1rem;
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
-  
-  .navLink {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .navLink:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .navList {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  
-    .navItem {
-      margin-left: 0;
-      margin-top: 0.5rem;
-    }
-  }
-  
+}
