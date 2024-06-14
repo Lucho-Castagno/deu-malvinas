@@ -24,8 +24,31 @@
   }
   
   .logo {
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
   }
+  
+  .logoLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5rem;
+  }
+  
+  .logoTextTop,
+  .logoTextBottom {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  
   
   .socialMedia {
     display: flex;
@@ -35,12 +58,6 @@
   }
   .socialMedia a {
     text-decoration: none;
-  }
-  
-  .socialIcon {
-    width: 24px;
-    height: 24px;
-    color: white;
   }
   
   .rightSection {
@@ -53,18 +70,16 @@
     flex-direction: column;
   }
   
-  .column h3 {
-    margin-bottom: 1rem;
+  .column p {
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
   
   .column ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .column li {
-    margin-bottom: 0.5rem;
   }
   
   .column li a {
