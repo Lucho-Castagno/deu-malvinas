@@ -4,69 +4,65 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className={styles.footer} role="contentinfo">
-      <div className={styles.container}>
-        <section className={styles.leftSection}>
-
-        <div className={styles.logo}>
-          <Link href="/" legacyBehavior>
-            <a className={styles.logoLink} title="Inicio">
-              <div className={styles.textContainer}>
-                <span className={styles.logoTextTop}>Memorias de</span>
-                <span className={styles.logoTextBottom}>Malvinas</span>
-              </div>
-              <Image src="/casco.svg" alt="" width={50} height={50} className={styles.logoImage} />
-            </a>
-          </Link>
+    <footer className={`${styles.footer} bg-teal text-white py-4`} role="contentinfo">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4 d-flex flex-column align-items-center align-items-md-start mb-4 mb-md-0">
+            <Link href="/" legacyBehavior>
+              <a className="d-flex align-items-center mb-3 navbar-brand" title="Inicio">
+                <div className="text-start">
+                  <span className="d-block">Memorias de</span>
+                  <span className="d-block">Malvinas</span>
+                </div>
+                <Image src="/casco.svg" alt="Logo" width={50} height={50} className="ml-2" />
+              </a>
+            </Link>
+            <div className="d-flex justify-content-center">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+                <Image src="/redes/facebook.svg" alt="Facebook" width={30} height={30} />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+                <Image src="/redes/twitter.svg" alt="Twitter" width={30} height={30} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+                <Image src="/redes/instagram.svg" alt="Instagram" width={30} height={30} />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="mx-2">
+                <Image src="/redes/youtube.svg" alt="YouTube" width={30} height={30} />
+              </a>
+            </div>
+          </div>
+          <div className="col-md-2 mb-4 mb-md-0">
+            <h5>Nosotros</h5>
+            <ul className="list-unstyled">
+              <li><Link href="/nosotros" legacyBehavior><a className="text-white">Acerca de Memorias de Malvinas</a></Link></li>
+              <li><Link href="/blog" legacyBehavior><a className="text-white">Blog</a></Link></li>
+            </ul>
+          </div>
+          <div className="col-md-2 mb-4 mb-md-0">
+            <h5>Alianzas</h5>
+            <ul className="list-unstyled">
+              <li><Link href="/editoriales" legacyBehavior><a className="text-white">Editoriales</a></Link></li>
+              <li><Link href="/universidades" legacyBehavior><a className="text-white">Universidades</a></Link></li>
+              <li><Link href="/contribuidores" legacyBehavior><a className="text-white">Contribuidores</a></Link></li>
+            </ul>
+          </div>
+          <div className="col-md-2 mb-4 mb-md-0">
+            <h5>Soporte</h5>
+            <ul className="list-unstyled">
+              <li><Link href="/ayuda" legacyBehavior><a className="text-white">Ayuda</a></Link></li>
+              <li><Link href="/contacto" legacyBehavior><a className="text-white">Contáctanos</a></Link></li>
+            </ul>
+          </div>
+          <div className="col-md-2 mb-4 mb-md-0">
+            <h5>Legal</h5>
+            <ul className="list-unstyled">
+              <li><Link href="/terminos" legacyBehavior><a className="text-white">Términos</a></Link></li>
+              <li><Link href="/privacidad" legacyBehavior><a className="text-white">Privacidad</a></Link></li>
+              <li><Link href="/copyright" legacyBehavior><a className="text-white">Copyright</a></Link></li>
+            </ul>
+          </div>
         </div>
-          
-          <div className={styles.socialMedia}>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <Image src="/redes/facebook.svg" alt="Facebook" className={styles.socialIcon} width={30} height={30} />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <Image src="/redes/twitter.svg" alt="Twitter" className={styles.socialIcon} width={30} height={30}/>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <Image src="/redes/instagram.svg" alt="Instagram" className={styles.socialIcon}width={30} height={30} />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <Image src="/redes/youtube.svg" alt="Yourube" className={styles.socialIcon} width={30} height={30}/>
-            </a>
-          </div>
-        </section>
-        <section className={styles.rightSection}>
-          <div className={styles.column}>
-            <p>Nosotros</p>
-            <ul>
-              <li><Link href="/nosotros" title="Acerca de Memorias de Malvinas">Acerca de Memorias de Malvinas</Link></li>
-              <li><Link href="/blog" title="Blog">Blog</Link></li>
-            </ul>
-          </div>
-          <div className={styles.column}>
-            <p>Alianzas</p>
-            <ul>
-              <li><Link href="/editoriales" title="Editoriales">Editoriales</Link></li>
-              <li><Link href="/universidades" title="Universidades">Universidades</Link></li>
-              <li><Link href="/contribuidores" title="Contribuidores">Contribuidores</Link></li>
-            </ul>
-          </div>
-          <div className={styles.column}>
-            <p>Soporte</p>
-            <ul>
-              <li><Link href="/ayuda" title="Ayuda">Ayuda</Link></li>
-              <li><Link href="/contacto" title="Contacto">Contctános</Link></li>
-            </ul>
-          </div>
-          <div className={styles.column}>
-            <p>Legal</p>
-            <ul>
-              <li><Link href="/terminos" title="Terminos">Terminos</Link></li>
-              <li><Link href="/privacidad" title="Privacidad">Privacidad</Link></li>
-              <li><Link href="/copyright" title="Copyright">Copyright</Link></li>
-            </ul>
-          </div>
-        </section>
       </div>
     </footer>
   );
