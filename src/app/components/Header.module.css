@@ -1,3 +1,15 @@
+.customNavbar {
+  background-color: #006769 !important;
+}
+
+.customNavLink {
+  color: white !important;
+}
+
+.customNavLink:hover {
+  color: lightgray !important;
+}
+
 .header {
   background-color: #006769;
   color: white;

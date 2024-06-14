@@ -1,62 +1,79 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
+import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <header className={styles.header} role="banner">
-      <div className={styles.container}>
-        <div className={styles.logo}>
+    <header role="banner">
+      <nav className={`navbar navbar-expand-lg ${styles.customNavbar}`}>
+        <div className="container">
           <Link href="/" legacyBehavior>
-            <a className={styles.logoLink} title="Inicio">
-              <div className={styles.textContainer}>
-                <span className={styles.logoTextTop}>Memorias de</span>
-                <span className={styles.logoTextBottom}>Malvinas</span>
+            <a className="navbar-brand" title="Inicio">
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <Image src="/casco.svg" alt="" width={50} height={50} />
+                <div className={`ms-2 ${styles.customNavLink}`}>
+                  <span className="d-block">Memorias de</span>
+                  <span className="d-block">Malvinas</span>
+                </div>
               </div>
-              <Image src="/casco.svg" alt="" width={50} height={50} className={styles.logoImage} />
             </a>
           </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            onClick={toggleNavbar}
+            aria-controls="navbarNav"
+            aria-expanded={isOpen}
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link href="/veteranos" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Veteranos">Veteranos</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/historias" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Historias">Historias</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/mapa" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Mapa">Mapa</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/recursos" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Recursos">Recursos</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/nosotros" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Nosotros">Nosotros</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/personalizacion" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Personalización">Personalización</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav className={styles.nav} role="navigation" aria-label="Menú principal">
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <Link href="/" legacyBehavior>
-                <a className={styles.navLink} title="Inicio">Inicio</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/veteranos" legacyBehavior>
-                <a className={styles.navLink} title="Veteranos">Veteranos</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/historias" legacyBehavior>
-                <a className={styles.navLink} title="Historias">Historias</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/mapa" legacyBehavior>
-                <a className={styles.navLink} title="Mapa">Mapa</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/recursos" legacyBehavior>
-                <a className={styles.navLink} title="Recursos">Recursos</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/nosotros" legacyBehavior>
-                <a className={styles.navLink} title="Nosotros">Nosotros</a>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/personalizacion" legacyBehavior>
-                <a className={styles.navLink} title="Personalización">Personalización</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
   );
 }
