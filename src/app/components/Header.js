@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import styles from './Header.module.css';
 import Image from 'next/image';
+import styles from './Header.module.css';
 
 export default function Header() {
   return (
@@ -9,8 +9,11 @@ export default function Header() {
         <div className={styles.logo}>
           <Link href="/" legacyBehavior>
             <a className={styles.logoLink} title="Inicio">
-            <Image src="/logo.png" alt="Memorias de Malvinas" width={200} height={50} className={styles.logo} />
-              {/*<span className={styles.logoText}>Memorias de Malvinas</span>}*/}
+              <div className={styles.textContainer}>
+                <span className={styles.logoTextTop}>Memorias de</span>
+                <span className={styles.logoTextBottom}>Malvinas</span>
+              </div>
+              <Image src="/casco.svg" alt="" width={50} height={50} className={styles.logoImage} />
             </a>
           </Link>
         </div>
@@ -38,7 +41,7 @@ export default function Header() {
             </li>
             <li className={styles.navItem}>
               <Link href="/recursos" legacyBehavior>
-                <a className={styles.navLink} title="Recusros">Recursos</a>
+                <a className={styles.navLink} title="Recursos">Recursos</a>
               </Link>
             </li>
             <li className={styles.navItem}>

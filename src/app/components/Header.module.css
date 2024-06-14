@@ -27,14 +27,19 @@
   color: white;
 }
 
-.logoImage {
+.textContainer {
+  display: flex;
+  flex-direction: column;
   margin-right: 0.5rem;
 }
 
-.logoText {
+.logoTextTop,
+.logoTextBottom {
   font-size: 1.2rem;
+  line-height: 1.2;
   font-weight: bold;
 }
+
 
 .nav {
   display: flex;
