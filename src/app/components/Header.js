@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
 import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
