@@ -1,5 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
 body {
-    font-family: 'Roboto', sans-serif;
-  }
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-lightyellow {
+  background-color: #E6FF94;
+}

@@ -2,17 +2,16 @@ import styles from "./ver.modules.css";
 
 export default function VeteranosPage() {
     return (
-      <main role="main" className="main">
+      <main role="main" className="main container my-5 py-5">
       <section>
-        <div className="titulo">
-          <h1>Nómina de veteranos de guerra de Malvinas</h1>
+        <div className="titulo mb-5">
+          <h1 className="mb-4">Nómina de veteranos de guerra de Malvinas</h1>
 
           <div className="search-bar">
             <label htmlFor="search-input" className="visually-hidden">Buscar veterano</label>
             <input id="search-input" type="text" placeholder="Buscar..." aria-label="Buscar veterano" />
             <button aria-label="Buscar">Buscar</button>
           </div>
-
         </div>
       </section>
       <section className=" table-responsive-sm tabla">
