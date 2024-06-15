@@ -23,7 +23,7 @@ export default function VeteranosPage() {
             <th>Arma</th>
             <th className="d-none d-sm-table-cell">Grado</th>
             <th>Vive</th>
-            <th></th>
+            <th>Historias</th>
           </tr>
         </thead>
         <tbody>
@@ -34,7 +34,7 @@ export default function VeteranosPage() {
             <td className="d-none d-sm-table-cell">Grado 1</td>
             <td>Vive 1</td>
             <td>
-            <button aria-label="Ver historia de Nombre 1">Historia</button>
+            <button className="btn-lightyellow" aria-label="Ver historia de Nombre 1">Historia</button>
             </td>
           </tr>
           <tr>
@@ -44,7 +44,7 @@ export default function VeteranosPage() {
             <td className="d-none d-sm-table-cell">Grado 1</td>
             <td>Vive 1</td>
             <td>
-            <button aria-label="Ver historia de Nombre 1">Historia</button>
+            <button className="btn-lightyellow" aria-label="Ver historia de Nombre 1">Historia</button>
             </td>
           </tr>
           <tr>
@@ -54,7 +54,7 @@ export default function VeteranosPage() {
             <td className="d-none d-sm-table-cell">Grado 1</td>
             <td>Vive 1</td>
             <td>
-            <button aria-label="Ver historia de Nombre 1">Historia</button>
+            <button className="btn-lightyellow" aria-label="Ver historia de Nombre 1">Historia</button>
             </td>
           </tr>
         </tbody>

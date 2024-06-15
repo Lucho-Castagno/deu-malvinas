@@ -28,7 +28,7 @@ export default function Home() {
         <p className={styles.subtitle}>
           Veteranos que lucharon en Malvinas 
           <Image src="/soldado.png" alt="Soldado" width={200} height={200} className={styles.subtitleImage} />
-          </p>
+        </p>
       </section>
       <section className={`container text-center mb-5`}>
         <div className="row">

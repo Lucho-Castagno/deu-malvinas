@@ -1,0 +1,24 @@
+  .titulo{
+    color:#40A578;
+    font-weight: bold;
+  }
+
+  .search-bar {
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    background-color: #E6FF94;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #fafafa;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
