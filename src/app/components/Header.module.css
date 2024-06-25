@@ -4,10 +4,13 @@
 
 .customNavLink {
   color: white !important;
+  font-size:1.1em !important;
 }
 
 .customNavLink:hover {
   color: lightgray !important;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 .header {
