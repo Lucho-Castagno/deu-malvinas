@@ -1,5 +1,5 @@
 import styles from "./ver.modules.css";
-
+import Link from 'next/link';
 export default function VeteranosPage() {
     return (
       <main role="main" className="main container my-5 py-5">
@@ -34,7 +34,9 @@ export default function VeteranosPage() {
             <td className="d-none d-sm-table-cell">Grado 1</td>
             <td>Vive 1</td>
             <td>
-            <button className="btn-lightyellow" aria-label="Ver historia de Nombre 1">Historia</button>
+                <Link href="/historiaveterano">
+                  <button className="btn-lightyellow" aria-label="Ver historia de Nombre 1">Historia</button>
+                </Link>
             </td>
           </tr>
           <tr>
