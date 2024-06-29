@@ -1,4 +1,4 @@
-
+import styles from "./historiavet.css";
 
 export default function HistoriaVeterano() {
 
