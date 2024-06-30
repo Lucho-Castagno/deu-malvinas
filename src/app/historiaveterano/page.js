@@ -10,10 +10,14 @@ export default function HistoriaVeterano() {
   };
 
   const informacionAdicional = {
-    nombre: "Abad, Hugo Daniel",
+    nombre: "ABAD, Hugo Daniel",
     documento: "10420627",
     arma: "Armada",
-    grado: "Suboficial principal"
+    grado: "Suboficial principal",
+    vive: "No",
+    condicion: "VGM",
+    edad: "38",
+    ubicacion: "Av.1 Calle2-Mariano Moreno "
   }; 
 
   return (
@@ -42,6 +46,10 @@ export default function HistoriaVeterano() {
             <p><strong>Documento:</strong> {informacionAdicional.documento}</p>
             <p><strong>Arma:</strong> {informacionAdicional.arma}</p>
             <p><strong>Grado:</strong> {informacionAdicional.grado}</p>
+            <p><strong>Vive:</strong> {informacionAdicional.vive}</p>
+            <p><strong>Condicion:</strong> {informacionAdicional.condicion}</p>
+            <p><strong>Edad:</strong> {informacionAdicional.edad}</p>
+            <p><strong>Ubicación:</strong> {informacionAdicional.ubicacion}</p>
           </div>
         </div>
       </div>
