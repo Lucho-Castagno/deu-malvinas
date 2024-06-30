@@ -10,8 +10,10 @@ export default function HistoriaVeterano() {
   };
 
   const informacionAdicional = {
-    titulo: "Información Adicional",
-    contenido: "Esta sección puede contener información adicional relevante sobre la historia seleccionada, incluyendo datos históricos, contexto, etc."
+    nombre: "Abad, Hugo Daniel",
+    documento: "10420627",
+    arma: "Armada",
+    grado: "Suboficial principal"
   }; 
 
   return (
@@ -36,8 +38,10 @@ export default function HistoriaVeterano() {
         </div>
         <div className="col-md-6 mb-4">
           <div className="p-3 bg-light">
-            <h5 className="titulo">{informacionAdicional.titulo}</h5>
-            <p>{informacionAdicional.contenido}</p>
+          <p><strong>Apellido y nombre:</strong> {informacionAdicional.nombre}</p>
+            <p><strong>Documento:</strong> {informacionAdicional.documento}</p>
+            <p><strong>Arma:</strong> {informacionAdicional.arma}</p>
+            <p><strong>Grado:</strong> {informacionAdicional.grado}</p>
           </div>
         </div>
       </div>
