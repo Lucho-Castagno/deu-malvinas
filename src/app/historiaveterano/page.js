@@ -31,7 +31,7 @@ export default function HistoriaVeterano() {
         <div className="col-md-6 mb-4">
           <div className="card h-100 bg-lightyellow p-3">
             <Image src={historia.imgSrc} className="card-img-top" alt={historia.nombre} width={128} height={128} />
-            <div className="card-body">
+            <div className="card-body text-center">
               <h5 className="card-title">{historia.nombre}</h5>
               <p className="card-text">{historia.descripcion}</p>
               <button className="btn btn-outline-success" aria-label={`Más información sobre ${historia.nombre}`}>
