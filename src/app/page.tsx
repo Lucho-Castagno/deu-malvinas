@@ -10,17 +10,14 @@ export default function Home() {
             <p className="text-md-start text-center">Descubre la memoria viva de los héroes de las Malvinas. Explora este recurso para una comprensión más profunda de un evento histórico crucial para Argentina y el Reino Unido.</p>
           </div>
           <div className="col-md-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345095963!2d144.95373531531843!3d-37.81627937975156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f1b8c5e9cbbd!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1594273325454!5m2!1sen!2sau"
-              width="100%"
-              height="400"
-              frameBorder="0"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              aria-hidden="false"
-              tabIndex={0}
-              title="Mapa de la memoria viva de los Heroes de Malvinas. Se encuentran los hechos principales y donde luchó cada veterano"
-            ></iframe>
+            <Image
+                src="/presentation-map.png"  // Asegúrate de que la imagen esté en la carpeta public
+                alt="Mapa presentacion de la memoria viva de los Héroes de Malvinas"
+                layout="responsive"
+                width={600}  // Ajusta estos valores según sea necesario
+                height={400}  // Ajusta estos valores según sea necesario
+                className="embed-responsive-item"
+              />
           </div>
         </div>
       </section>
