@@ -51,8 +51,15 @@ export default function Map() {
             icon={custom_marker}
           >
             <Popup>
-              {feature.properties.name || 'Unknown'}<br />
-              {feature.properties.description || ''}
+            <div>
+              <h3>{feature.properties.Nombre}</h3>
+              <p aria-label="Rango militar"><strong>Rango:</strong> {feature.properties.Grado}</p>
+              {feature.properties.F_Deceso && (
+                  <p aria-label="Estado de fallecimiento"><strong>Estado:</strong> Fallecido el {feature.properties.F_Deceso}</p>
+                )}
+              <p aria-label="Lugar de nacimiento"><strong>Lugar de nacimiento:</strong> {feature.properties.L_Nac}</p>
+              <p aria-label="Fecha de nacimiento"><strong>Fecha de nacimiento:</strong> {feature.properties.F_Nac}</p>
+            </div>
             </Popup>
           </Marker>
         ))}
