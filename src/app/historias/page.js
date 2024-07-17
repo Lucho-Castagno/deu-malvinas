@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useGeoJsonData } from '../hook/useGeoJsonData';
+import { useRouter } from 'next/navigation';
 
 function processUrl(url) {
   if (url.startsWith('.')) {
@@ -11,10 +12,17 @@ function processUrl(url) {
   return url;
 }
 
-export default function SoldadosPage() {
+export default function HistoriasPage() {
   const veterans = useGeoJsonData();
   const baseUrl = 'https://www.bienestar.mil.ar/malvinas';
-  const defaultPhotoUrl = '/images/soldado2.png'; // Ruta de la imagen por defecto
+  const defaultPhotoUrl = 'soldado2.png'; // Ruta de la imagen por defecto
+
+  const router = useRouter();
+
+  const handleMoreInfo = (veteran) => {
+    localStorage.setItem('veteran', JSON.stringify(veteran));
+    router.push("/historiaveterano");
+  };
 
   return (
     <main className="container my-5 p-5" role="main">
@@ -29,11 +37,19 @@ export default function SoldadosPage() {
               <div className="card h-100 bg-lightyellow p-3">
                 {props && (
                   <>
-                    <Image src={photoUrl} className="card-img-top" alt={props.Nombre} width={128} height={128} />
+                  <div className='w-100 d-flex justify-content-center align-items-center'>
+                    <div style={{ width: '128px', height: '128px' }}>
+                      <Image src={photoUrl} className="rounded-circle" alt={props.Nombre} width={128} height={128} />
+                    </div>
+                  </div>
                     <div className="card-body">
                       <h5 className="card-title">{props.Nombre}</h5>
                       <p className="card-text">{props.Escalafon}</p>
-                      <button className="btn btn-outline-success" aria-label={`Más información sobre ${props.Nombre}`}>
+                      <button
+                        className="btn btn-outline-success"
+                        aria-label={`Más información sobre ${props.Nombre}`}
+                        onClick={() => handleMoreInfo(veteran)}
+                      >
                         Más información
                       </button>
                     </div>
