@@ -2,31 +2,12 @@ import { MapContainer, Marker, TileLayer, Tooltip, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import L from 'leaflet';
-import { fetchGeoJsonData } from '../../services/geojsonService';
+import { useGeoJsonData } from '../../hook/useGeoJsonData';
 
 export default function Map() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const paths = [
-      'fallecidosEA.geojson',
-      'fallecidosFFA.geojson',
-      'fallecidosArmada.geojson',
-      'fallecidosPNA.geojson',
-      'fallecidosGNA.geojson',
-    ];
-
-    const fetchData = async () => {
-      const promises = paths.map(path => fetchGeoJsonData(path));
-      const results = await Promise.all(promises);
-      const allData = results.flatMap(result => result ? result.features : []);
-      setData(allData);
-    };
-
-    fetchData();
-  }, []);
+  const data = useGeoJsonData();
 
   const custom_marker = L.icon({
     iconUrl: 'soldado-marker.png',
