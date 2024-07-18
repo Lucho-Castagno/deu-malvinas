@@ -19,12 +19,13 @@ export default function EventosPage() {
   }, []);
 
   return (
-    <main className={styles.timeline}>
+    <main className={styles.timeline} role="list">
       {Array.isArray(events) && events.length > 0 ? (
         events.map((event, index) => (
           <div
             key={index}
             className={`${styles.container} ${index % 2 === 0 ? styles.left : styles.right}`}
+            role="listitem"
           >
             <div className={styles.content}>
               <h2>{event.date}</h2>
