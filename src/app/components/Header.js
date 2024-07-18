@@ -40,8 +40,8 @@ export default function Header() {
           <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-                <Link href="/" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Inicio">Inicio</a>
+                <Link href="/eventos" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Eventos">Eventos</a>
                 </Link>
               </li>
               <li className="nav-item">
