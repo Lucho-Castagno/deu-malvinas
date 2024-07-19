@@ -7,8 +7,20 @@ import { useRouter } from 'next/navigation';
 
 function processUrl(url) {
   if (url.startsWith('.')) {
-    return url.substring(1);
+    url = url.substring(1);
   }
+
+  const validExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
+  const extIndex = url.lastIndexOf('.');
+  if (extIndex !== -1) {
+    const ext = url.substring(extIndex);
+    if (!validExtensions.includes(ext)) {
+      url = url.substring(0, extIndex) + '.png';
+    }
+  } else {
+    url += '.png';
+  }
+
   return url;
 }
 

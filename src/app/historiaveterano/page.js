@@ -56,12 +56,25 @@ export default function HistoriaVeterano() {
   const baseUrl = 'https://www.bienestar.mil.ar/malvinas';
   const defaultPhotoUrl = '/images/soldado2.png'; // Ruta de la imagen por defecto
 
-  const processUrl = (url) => {
-    if (typeof url === 'string' && url.startsWith('.')) {
-      return url.substring(1);
+  
+function processUrl(url) {
+  if (url.startsWith('.')) {
+    url = url.substring(1);
+  }
+
+  const validExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
+  const extIndex = url.lastIndexOf('.');
+  if (extIndex !== -1) {
+    const ext = url.substring(extIndex);
+    if (!validExtensions.includes(ext)) {
+      url = url.substring(0, extIndex) + '.png';
     }
-    return url;
-  };
+  } else {
+    url += '.png';
+  }
+
+  return url;
+}
 
   const photoUrl = Foto ? `${baseUrl}${processUrl(Foto)}` : defaultPhotoUrl;
   const pdfUrl = PDF ? `${baseUrl}${processUrl(PDF)}` : null;
