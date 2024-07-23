@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import styles from './Eventos.module.css';
+import styles from './Historia.module.css';
 
 export default function EventosPage() {
   const [events, setEvents] = useState([]);
@@ -19,7 +19,9 @@ export default function EventosPage() {
   }, []);
 
   return (
-    <main className={styles.timeline} role="list">
+    <main className="container my-5 py-5" role="main">
+        <h1 className="mb-5">Historia</h1>
+    <div className={styles.timeline} role="list">
       {Array.isArray(events) && events.length > 0 ? (
         events.map((event, index) => (
           <div
@@ -36,6 +38,7 @@ export default function EventosPage() {
       ) : (
         <p>No hay eventos para mostrar.</p>
       )}
+      </div>
     </main>
   );
 }

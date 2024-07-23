@@ -40,8 +40,8 @@ export default function Header() {
           <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-                <Link href="/eventos" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Eventos">Eventos</a>
+                <Link href="/" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Inicio">Inicio</a>
                 </Link>
               </li>
               <li className="nav-item">
@@ -50,13 +50,18 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/historias" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Historias">Historias</a>
+                <Link href="/mapa" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Mapa">Mapa</a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/mapa" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Mapa">Mapa</a>
+                <Link href="/historia" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Historia">Historia</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/resoluciones" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Resoluciones">Resoluciones</a>
                 </Link>
               </li>
               <li className="nav-item">
@@ -65,8 +70,8 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/personalizacion" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Personalización">Personalización</a>
+                <Link href="/configuracion" legacyBehavior>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Configuración">Configuración</a>
                 </Link>
               </li>
             </ul>

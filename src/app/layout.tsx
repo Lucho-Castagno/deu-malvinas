@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Las Malvinas Argentinas",
+  title: "Historias de Malvinas",
   description: "DEU 2024 - Grupo X",
 };
 

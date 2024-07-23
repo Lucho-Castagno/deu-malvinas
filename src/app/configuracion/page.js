@@ -1,7 +1,7 @@
 export default function PersonalizacionPage() {
     return (
       <div className="container my-5 py-5" role="main">
-        <h1 className="mb-5">Personalizacion</h1>
+        <h1 className="mb-5">Configuración</h1>
         <div className="row"> 
           <div className="col-md-6">
             <div className="mb-5">
