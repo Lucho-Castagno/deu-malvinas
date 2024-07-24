@@ -30,13 +30,13 @@ export default function Home() {
       <section className={`container text-center mb-5`}>
         <div className="row">
           <div className="col-lg-4">
-            <Image src="/fotos/image 43.png" alt="Foto 1" width={300} height={300} className={styles.photo} />
+            <Image src="/fotos/imagen1.png" alt="Soldados argentinos en una trinchera en Puerto Yapeyú" width={300} height={300} className={styles.photo} />
           </div>
           <div className="col-lg-4">
-            <Image src="/fotos/image 45.png" alt="Foto 2" width={300} height={300} className={styles.photo} />
+            <Image src="/fotos/imagen2.jpg" alt="Soldados de las tropas argentinas. Foto: Archivo Telam" width={300} height={300} className={styles.photo} />
           </div>
           <div className="col-lg-4">
-            <Image src="/fotos/image 47.png" alt="Foto 3" width={300} height={300} className={styles.photo} />
+            <Image src="/fotos/imagen3.png" alt="Campamento de una patrulla en cercanías del aeropuerto de la ciudad Télam 162" width={300} height={300} className={styles.photo} />
           </div>
         </div>
       </section>
@@ -46,9 +46,9 @@ export default function Home() {
             <Image src="/argentina.png" alt="Argentina" width={200} height={200} className={styles.finalImage} />
           </div>
           <div className="col-md-8">
-            <p>
-              El conflicto de las Malvinas, ocurrido en 1982 entre Argentina y el Reino Unido, dejó una profunda huella en la historia contemporánea. Esta guerra, que se libró por el control de las Islas Malvinas, resultó en la pérdida de vidas humanas y marcó un hito en la historia militar y política de ambas naciones.
-              A través de imágenes impactantes y relatos emotivos, honramos la valentía de aquellos que lucharon en este conflicto.
+            <p>El conflicto armado entre Argentina y el Reino Unido por las Islas Malvinas en 1982 resultó en la trágica pérdida de muchas vidas.
+              En nuestro país, la Guerra de Malvinas es considerada un evento crucial que marcó un antes y un después en la historia, causando una gran conmoción social y política, y dejando una profunda huella en la identidad nacional.
+              La memoria de los soldados caídos en la guerra es de gran importancia para los argentinos, siendo considerada un símbolo de la lucha por la soberanía y la dignidad nacional.              
             </p>
           </div>
         </div>
