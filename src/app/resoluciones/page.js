@@ -26,16 +26,16 @@ export default function ResolucionesPage() {
           <p>En el curso de 1967 se pasó a una etapa de conversaciones informales permanentes, que permitían mantener el ritmo negociador sin limitarse a las ruedas formales</p>
           <p>...</p>
         <p className={styles.titulo}>1973</p>
-          <p>La resolución 3160 (XXVIII) de la Asamblea General reconocía "los continuos esfuerzos realizados por el gobierno argentino" y declaraba "la necesidad de que se aceleren las 
-          negociaciones previstas en la Resolución 2065 (XX) [...] para arribar a una solución pacífica de la disputa de soberanía existente" entre ambos gobiernos sobre las Islas Malvinas.
+          <p>La resolución 3160 (XXVIII) de la Asamblea General reconocía &quot;los continuos esfuerzos realizados por el gobierno argentino&quot; y declaraba &quot;la necesidad de que se aceleren las 
+          negociaciones previstas en la Resolución 2065 (XX) [...] para arribar a una solución pacífica de la disputa de soberanía existente&quot; entre ambos gobiernos sobre las Islas Malvinas.
            A partir de la firme actitud argentina y la visión ampliamente mayoritaria de la comunidad internacional, ambos gobiernos ensayaron en los años sucesivos algunas alternativas para reencauzar la negociación.
            Así ocurrió con la propuesta británica de junio de 1974 tendiente a establecer un condominio anglo-argentino en las Islas Malvinas como paso previo a una solución final a la disputa de soberanía</p>
         <p className={styles.titulo}>1976</p>
           <p>En 1976 se llegó a una situación de tensión bilateral, alimentada por distintos actos unilaterales británicos en el área de la disputa. A fines de ese año, la Asamblea General de las
-             Naciones Unidas, por una amplia mayoría y con la única oposición del Reino Unido, aprobó la Resolución 31/49 que nuevamente reconocía los "continuos esfuerzos" argentinos para 
-             "facilitar el proceso de descolonización y promover el bienestar de la población de las Islas", solicitaba a ambos gobiernos "que aceleren las negociaciones relativas a la disputa sobre 
-             soberanía, según se pide en las resoluciones 2065 (XX) y 3160 (XXVIII)", e instaba a las dos partes a "que se abstengan de adoptar decisiones que entrañen la introducción de modificaciones unilaterales 
-             en la situación mientras las Islas están atravesando por el proceso recomendado en las resoluciones" mencionadas</p>
+             Naciones Unidas, por una amplia mayoría y con la única oposición del Reino Unido, aprobó la Resolución 31/49 que nuevamente reconocía los &quot;continuos esfuerzos&quot; argentinos para 
+             &quot;facilitar el proceso de descolonización y promover el bienestar de la población de las Islas&quot;, solicitaba a ambos gobiernos &quot;que aceleren las negociaciones relativas a la disputa sobre 
+             soberanía, según se pide en las resoluciones 2065 (XX) y 3160 (XXVIII)&quot;, e instaba a las dos partes a &quot;que se abstengan de adoptar decisiones que entrañen la introducción de modificaciones unilaterales 
+             en la situación mientras las Islas están atravesando por el proceso recomendado en las resoluciones&quot; mencionadas</p>
         <p className={styles.titulo}>1982</p>
           <p>Solicita a los dos gobiernos reanudar las negociaciones que permitan encontrar una solución pacífica a la disputa de soberanía. Ello fue reiterado en las subsiguientes 
             resoluciones de la Asamblea relativas a la Cuestión.</p>
