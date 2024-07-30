@@ -2,6 +2,8 @@
 import { useMemo } from "react";
 import dynamic from "next/dynamic";
 import "../globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function MapaPage() {
   const Map = useMemo(() => dynamic(
