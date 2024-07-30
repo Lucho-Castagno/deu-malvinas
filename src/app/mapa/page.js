@@ -14,6 +14,13 @@ export default function MapaPage() {
 
   return (
     <main role="main" className="main">
+      <h1 className={`text-center subtitle`}>Mapa interactivo</h1>
+      <section class="container-md">
+        <p>En el mapa se presenta la geolocalización correspodiente al lugar de falecimiento 
+        de cada uno de los combatientes caídos durante la Guerra de Malvinas.</p>
+        <p>Al hacer click en la ubicación de alguno de los caídos, se puede acceder a 
+          un resumen de la reseña biográfica.</p>
+          </section>
       <section>
         <Map/>
       </section>
