@@ -98,7 +98,7 @@ export default function VeteranosPage() {
                       <h5 className="card-title">{props.Nombre}</h5>
                       <p className="card-text">{props.Escalafon}</p>
                       <button
-                        className="btn btn-outline-success"
+                        className="btn btn-success"
                         aria-label={`Más información sobre ${props.Nombre}`}
                         onClick={() => handleMoreInfo(veteran)}
                       >

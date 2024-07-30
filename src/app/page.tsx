@@ -7,7 +7,7 @@ export default function Home() {
       <section className={`container-fluid ${styles.topSection}`}>
         <div className="row">
           <div className="col-md-6 d-flex align-items-center">
-            <p className="text-md-start text-center">Descubre la memoria viva de los héroes de las Malvinas. Explora este recurso para una comprensión más profunda de un evento histórico crucial para Argentina y el Reino Unido.</p>
+            <p className="text-md-start text-center">Descubre la memoria viva de los héroes de las Malvinas. Explora este recurso para una comprensión más profunda de un evento histórico crucial para Argentina.</p>
           </div>
           <div className="col-md-6">
             <Image

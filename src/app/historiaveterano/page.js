@@ -106,7 +106,7 @@ function processUrl(url) {
                 {renderField('Documento', DNI)}
                 {pdfUrl && (
                   <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-                    <button className="btn btn-outline-success">Ver reseña del combatiente</button>
+                    <button className="btn btn-success">Ver reseña del combatiente</button>
                   </a>
                 )}
               </div>
