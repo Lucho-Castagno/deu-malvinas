@@ -22,10 +22,10 @@ export default function Home() {
         </div>
       </section>
       <section className={`container text-center m-5`}>
-        <p className={styles.subtitle}>
+        <h1 className={styles.subtitle}>
           Veteranos que lucharon en Malvinas 
           <Image src="/soldado.png" alt="Soldado" width={200} height={200} className={styles.subtitleImage} />
-        </p>
+        </h1>
       </section>
       <section className={`container text-center mb-5`}>
         <div className="row">

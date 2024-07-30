@@ -1,8 +1,10 @@
+import "../globals.css";
+
 export default function AboutPage() {
     return (
       <div className="container my-5 py-5" role="main">
-        <h1 className="mb-5">Sobre Nosotros</h1>
-        <div className="row"> 
+      <h1 className={`text-center subtitle mb-5`}>Sobre Nosotros</h1>
+      <div className="row"> 
           <div className="col-md-12">
             <p>Somos un grupo de estudiantes de la Facultad de Informática de la Universidad Nacional de La Plata que estamos
                 cursando una materia llamada Diseño Centrado en el Usuario.</p>

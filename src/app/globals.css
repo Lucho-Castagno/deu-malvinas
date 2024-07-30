@@ -7,3 +7,9 @@ body {
 .bg-lightyellow {
   background-color: #E6FF94;
 }
+.subtitle {
+  color: #006769;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}

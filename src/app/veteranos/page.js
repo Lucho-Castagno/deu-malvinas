@@ -59,7 +59,7 @@ export default function VeteranosPage() {
 
   return (
     <main className="container my-5 p-5" role="main">
-      <h1 className="text-center titulo mb-5">
+      <h1 className={`text-center ${styles.titulo} mb-5`}>
         Historias de valor en las Malvinas
       </h1>
       <input
