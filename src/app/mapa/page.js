@@ -1,7 +1,7 @@
 'use client';
 import { useMemo } from "react";
-import styles from "./mapa.modules.css";
 import dynamic from "next/dynamic";
+import "../globals.css";
 
 export default function MapaPage() {
   const Map = useMemo(() => dynamic(
