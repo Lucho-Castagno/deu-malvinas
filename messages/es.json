@@ -1,0 +1,30 @@
+{
+  "Header": {
+    "title": "Memorias de",
+    "malvinas": "Malvinas",
+    "home": "Inicio",
+    "veterans": "Veteranos",
+    "map": "Mapa",
+    "history": "Historia",
+    "resolutions": "Resoluciones",
+    "about": "Nosotros",
+    "configuration": "Configuración"
+  },
+  "Footer": {
+    "title": "Memorias de",
+    "malvinas": "Malvinas",
+    "first_section": "Enlaces rápidos",
+    "history": "Historia",
+    "veterans": "Veteranos",
+    "map": "Mapa",
+    "second_section": "Contacto"
+  },
+  "LocaleSwitcher": {
+    "es": "Español",
+    "en": "Inglés",
+    "it": "Italiano",
+    "pt": "Portugués",
+    "fr": "Francés",
+    "label": "Idioma"
+  }
+}

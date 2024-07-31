@@ -4,8 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+  const t = useTranslations("Header");
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -21,8 +23,8 @@ export default function Header() {
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <Image src="/casco.svg" alt="" width={50} height={50} />
                 <div className={`ms-2 ${styles.customNavLink}`}>
-                  <span className="d-block">Memorias de</span>
-                  <span className="d-block">Malvinas</span>
+                  <span className="d-block">{t('title')}</span>
+                  <span className="d-block">{t('malvinas')}</span>
                 </div>
               </div>
             </a>
@@ -41,37 +43,37 @@ export default function Header() {
             <ul className="navbar-nav ms-auto">
             <li className="nav-item">
                 <Link href="/" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Inicio">Inicio</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Inicio">{t('home')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/veteranos" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Veteranos">Veteranos</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Veteranos">{t('veterans')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/mapa" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Mapa">Mapa</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Mapa">{t('map')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/historia" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Historia">Historia</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Historia">{t('history')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/resoluciones" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Resoluciones">Resoluciones</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Resoluciones">{t('resolutions')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/nosotros" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Nosotros">Nosotros</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Nosotros">{t('about')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/configuracion" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title="Configuración">Configuración</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title="Configuración">{t('configuration')}</a>
                 </Link>
               </li>
             </ul>

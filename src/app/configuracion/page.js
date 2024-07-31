@@ -1,3 +1,5 @@
+import LocaleSwitcher from '../components/LocaleSwitcher/LocaleSwitcher';
+
 export default function PersonalizacionPage() {
     return (
       <div className="container my-5 py-5" role="main">
@@ -26,18 +28,7 @@ export default function PersonalizacionPage() {
                 </select>
               </div>
             </div>
-            <div className="mb-5">
-              <h2>Idioma</h2>
-              <div className="card bg-lightyellow" style={{width: 18 + 'rem'}}>
-                <select className="form-select bg-transparent" aria-label="Idioma de la aplicación">
-                  <option value="0" selected>Español</option>
-                  <option value="1">Ingles</option>
-                  <option value="2">Portugues</option>
-                  <option value="3">Frances</option>
-                  <option value="4">Italiano</option>
-                </select>
-              </div>
-            </div>
+            <LocaleSwitcher />
           </div>
           <div className="col-md-6">
             <div className="mb-5">

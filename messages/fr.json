@@ -1,0 +1,30 @@
+{
+    "Header": {
+      "title": "Mémoires des",
+      "malvinas": "Malouines",
+      "home": "Accueil",
+      "veterans": "Vétérans",
+      "map": "Carte",
+      "history": "Histoire",
+      "resolutions": "Résolutions",
+      "about": "À Propos de Nous",
+      "configuration": "Configuration"
+    },
+    "Footer": {
+      "title": "Mémoires des",
+      "malvinas": "Malouines",
+      "first_section": "Liens Rapides",
+      "history": "Histoire",
+      "veterans": "Vétérans",
+      "map": "Carte",
+      "second_section": "Contact"
+    },
+    "LocaleSwitcher": {
+      "es": "Espagnol",
+      "en": "Anglais",
+      "it": "Italien",
+      "pt": "Portugais",
+      "fr": "Français",
+      "label": "Langue"
+    }
+  }

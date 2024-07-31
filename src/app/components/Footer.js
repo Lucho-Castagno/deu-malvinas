@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import styles from './Footer.module.css';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className={`${styles.footer} bg-teal text-white py-4`} role="contentinfo">
       <div className="container">
@@ -11,23 +14,23 @@ export default function Footer() {
             <Link href="/" legacyBehavior>
               <a className="d-flex align-items-center mb-3 navbar-brand">
                 <div className="text-start">
-                  <span className="d-block">Memorias de</span>
-                  <span className="d-block">Malvinas</span>
+                  <span className="d-block">{t('title')}</span>
+                  <span className="d-block">{t('malvinas')}</span>
                 </div>
                 <Image src="/casco.svg" alt="Logo de Memorias de Malvinas" width={50} height={50} className="ml-2" />
               </a>
             </Link>
           </div>
           <div className="col-md-2 mb-4 mb-md-0">
-            <p className={`${styles.customP}`}>Enlaces rápidos</p>
+            <p className={`${styles.customP}`}>{t('first_section')}</p>
             <ul className="list-unstyled">
-              <li><Link href="/historia" legacyBehavior><a className={`${styles.customLink}`}>Historia</a></Link></li>
-              <li><Link href="/veteranos" legacyBehavior><a className={`${styles.customLink}`}>Veteranos</a></Link></li>
-              <li><Link href="/mapa" legacyBehavior><a className={`${styles.customLink}`}>Mapa</a></Link></li>
+              <li><Link href="/historia" legacyBehavior><a className={`${styles.customLink}`}>{t('history')}</a></Link></li>
+              <li><Link href="/veteranos" legacyBehavior><a className={`${styles.customLink}`}>{t('veterans')}</a></Link></li>
+              <li><Link href="/mapa" legacyBehavior><a className={`${styles.customLink}`}>{t('map')}</a></Link></li>
             </ul>
           </div>
           <div className="col-md-2 mb-4 mb-md-0">
-            <p className={`${styles.customP}`}>Contacto:</p>
+            <p className={`${styles.customP}`}>{t('second_section')}:</p>
             <p>historias.de.malvinas.argentinas@gmail.com</p>
           </div>
         </div>
