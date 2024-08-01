@@ -1,6 +1,4 @@
 import "../globals.css";
-import styles from './Resoluciones.module.css';
-
 
 export default function ResolucionesPage() {
   return (
