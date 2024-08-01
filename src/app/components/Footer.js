@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
           <div className="col-md-2 mb-4 mb-md-0">
             <p className={`${styles.customP}`}>Contacto:</p>
-            <p>historias.de.malvinas.argentinas@gmail.com</p>
+            <p><a href="mailto:historias.de.malvinas.argentinas@gmail.com" className={`${styles.customLink}`}>historias.de.malvinas.argentinas@gmail.com</a></p>
           </div>
         </div>
       </div>
