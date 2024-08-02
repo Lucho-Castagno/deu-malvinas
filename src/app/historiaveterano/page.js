@@ -1,30 +1,33 @@
 "use client";
 
 import styles from "./historiavet.css";
-import React, { useState, useEffect, useMemo } from 'react';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
+import React, { useState, useEffect, useMemo } from "react";
+import Image from "next/image";
+import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
 
 export default function HistoriaVeterano() {
   const [veteran, setVeteran] = useState(null);
+  const t = useTranslations("VeteranHistoryPage");
 
   useEffect(() => {
-    const storedVeterano = localStorage.getItem('veteran');
+    const storedVeterano = localStorage.getItem("veteran");
     if (storedVeterano) {
       setVeteran(JSON.parse(storedVeterano));
     }
   }, []);
 
-  const Map = useMemo(() => dynamic(
-    () => import('./Map/Map'),
-    { 
-      loading: () => <p>A map is loading</p>,
-      ssr: false
-    }
-  ), []);
+  const Map = useMemo(
+    () =>
+      dynamic(() => import("./Map/Map"), {
+        loading: () => <p>A map is loading</p>,
+        ssr: false,
+      }),
+    []
+  );
 
   if (!veteran) {
-    return <p>Cargando datos del veterano...</p>; // Puedes mostrar un mensaje de carga o un spinner aquí.
+    return <p>{t("loading")}</p>;
   }
 
   const {
@@ -47,34 +50,33 @@ export default function HistoriaVeterano() {
     F_Ascenso,
     F_Deceso,
     PDF,
-    Foto
+    Foto,
   } = veteran.properties;
 
   const { coordinates } = veteran.geometry;
   const [Longitud, Latitud] = coordinates;
 
-  const baseUrl = 'https://www.bienestar.mil.ar/malvinas';
-  const defaultPhotoUrl = '/images/soldado2.png'; // Ruta de la imagen por defecto
+  const baseUrl = "https://www.bienestar.mil.ar/malvinas";
+  const defaultPhotoUrl = "/images/soldado2.png"; // Ruta de la imagen por defecto
 
-  
-function processUrl(url) {
-  if (url.startsWith('.')) {
-    url = url.substring(1);
-  }
-
-  const validExtensions = ['.png', '.jpg', '.jpeg', '.gif'];
-  const extIndex = url.lastIndexOf('.');
-  if (extIndex !== -1) {
-    const ext = url.substring(extIndex);
-    if (!validExtensions.includes(ext)) {
-      url = url.substring(0, extIndex) + '.png';
+  function processUrl(url) {
+    if (url.startsWith(".")) {
+      url = url.substring(1);
     }
-  } else {
-    url += '.png';
-  }
 
-  return url;
-}
+    const validExtensions = [".png", ".jpg", ".jpeg", ".gif"];
+    const extIndex = url.lastIndexOf(".");
+    if (extIndex !== -1) {
+      const ext = url.substring(extIndex);
+      if (!validExtensions.includes(ext)) {
+        url = url.substring(0, extIndex) + ".png";
+      }
+    } else {
+      url += ".png";
+    }
+
+    return url;
+  }
 
   const photoUrl = Foto ? `${baseUrl}${processUrl(Foto)}` : defaultPhotoUrl;
   const pdfUrl = PDF ? `${baseUrl}${processUrl(PDF)}` : null;
@@ -82,7 +84,9 @@ function processUrl(url) {
   const renderField = (label, value) => {
     if (!value) return null;
     return (
-      <p><strong>{label}:</strong> {value}</p>
+      <p>
+        <strong>{label}:</strong> {value}
+      </p>
     );
   };
 
@@ -90,23 +94,36 @@ function processUrl(url) {
     <main role="main" className="main container my-5 py-5">
       <section>
         <div className="titulo mb-5">
-          <h1 className="mb-4">Información adicional</h1>
+          <h1 className="mb-4">{t("title")}</h1>
         </div>
       </section>
       <div className="row">
         <div className="col-md-12 mb-4">
           <div className="card h-100 bg-lightyellow p-3">
             <div className="d-flex align-items-center mb-3">
-              <div style={{ width: '128px', height: '128px', marginRight: '15px' }}>
-                <Image src={photoUrl} className="rounded-circle" alt={Nombre} width={128} height={128} />
+              <div
+                style={{ width: "128px", height: "128px", marginRight: "15px" }}
+              >
+                <Image
+                  src={photoUrl}
+                  className="rounded-circle"
+                  alt={Nombre}
+                  width={128}
+                  height={128}
+                />
               </div>
               <div>
                 <h5 className="card-title mb-0">{Nombre}</h5>
-                {renderField('Escalafon', Escalafon)}
-                {renderField('Documento', DNI)}
+                {renderField(t('rank'), Escalafon)}
+                {renderField(t('document'), DNI)}
                 {pdfUrl && (
                   <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
-                    <button className="btn btn-success">Ver reseña del combatiente</button>
+                    <button
+                      className="btn btn-success"
+                      aria-label={t("see_more_btn_aria")}
+                    >
+                      {t("see_more_btn")}
+                    </button>
                   </a>
                 )}
               </div>
@@ -114,21 +131,21 @@ function processUrl(url) {
             <hr />
             <div className="row">
               <div className="col-md-6">
-                {renderField('Grado', Grado)}
-                {renderField('Grado post mortem', Grado_PM)}
-                {renderField('Arma', Arma)}
-                {renderField('Unidad', Unidad)}
-                {renderField('Fecha de fallecimiento', F_Deceso)}
-                {renderField('Lugar de fallecimiento', L_Deceso)}
-                {renderField('Madre', N_Madre)}
-                {renderField('Padre', N_Padre)}
-                {renderField('Lugar de entierro', L_Entierro)}
-                {renderField('Tumba', Tumba)}
-                {renderField('Fecha de nacimiento', F_Nac)}
-                {renderField('Lugar de nacimiento', L_Nac)}
-                {renderField('Rol de combate', Rol_Comb)}
-                {renderField('Fecha de ingreso', F_Ingreso)}
-                {renderField('Fecha de ascenso', F_Ascenso)}
+                {renderField(t('grade'), Grado)}
+                {renderField(t('post_mortem_grade'), Grado_PM)}
+                {renderField(t('weapon'), Arma)}
+                {renderField(t('unit'), Unidad)}
+                {renderField(t('date_of_death'), F_Deceso)}
+                {renderField(t('place_of_death'), L_Deceso)}
+                {renderField(t('mother'), N_Madre)}
+                {renderField(t('father'), N_Padre)}
+                {renderField(t('place_of_burial'), L_Entierro)}
+                {renderField(t('grave'), Tumba)}
+                {renderField(t('date_of_birth'), F_Nac)}
+                {renderField(t('place_of_birth'), L_Nac)}
+                {renderField(t('combat_role'), Rol_Comb)}
+                {renderField(t('date_of_enlistment'), F_Ingreso)}
+                {renderField(t('date_of_promotion'), F_Ascenso)}
               </div>
               <div className="col-md-6">
                 <Map Latitud={Latitud} Longitud={Longitud} />

@@ -17,7 +17,7 @@ export default function Footer() {
                   <span className="d-block">{t('title')}</span>
                   <span className="d-block">{t('malvinas')}</span>
                 </div>
-                <Image src="/casco.svg" alt="Logo de Memorias de Malvinas" width={50} height={50} className="ml-2" />
+                <Image src="/casco.svg" alt={t('logo_alt')} width={50} height={50} className="ml-2" />
               </a>
             </Link>
           </div>

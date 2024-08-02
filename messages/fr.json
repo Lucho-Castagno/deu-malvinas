@@ -1,30 +1,449 @@
 {
-    "Header": {
-      "title": "Mémoires des",
-      "malvinas": "Malouines",
-      "home": "Accueil",
-      "veterans": "Vétérans",
-      "map": "Carte",
-      "history": "Histoire",
-      "resolutions": "Résolutions",
-      "about": "À Propos de Nous",
-      "configuration": "Configuration"
+  "Header": {
+    "title_aria": "Mémoires des Malouines - Accueil",
+    "title": "Mémoires de",
+    "malvinas": "Malouines",
+    "menu_aria": "Activer la navigation",
+    "logo_alt": "Logo de la page - Mémoires des Malouines",
+    "home": "Accueil",
+    "veterans": "Vétérans",
+    "map": "Carte",
+    "history": "Histoire",
+    "resolutions": "Résolutions",
+    "about": "À Propos",
+    "configuration": "Configuration"
+  },
+  "Footer": {
+    "title": "Mémoires de",
+    "malvinas": "Malouines",
+    "logo_alt": "Logo de la page - Mémoires des Malouines",
+    "first_section": "Liens rapides",
+    "history": "Histoire",
+    "veterans": "Vétérans",
+    "map": "Carte",
+    "second_section": "Contact"
+  },
+  "LocaleSwitcher": {
+    "es": "Espagnol",
+    "en": "Anglais",
+    "it": "Italien",
+    "pt": "Portugais",
+    "fr": "Français",
+    "label": "Langue"
+  },
+  "ConfigurationPage": {
+    "title": "Configuration",
+    "shortcut_title": "Raccourcis",
+    "shortcut_subtitle": "Raccourcis clavier",
+    "search": "Rechercher",
+    "text_size_reduce": "Réduire la taille du texte",
+    "text_size_increase": "Augmenter la taille du texte"
+  },
+  "AboutPage": {
+    "title": "À Propos",
+    "intro": "Nous sommes un groupe d'étudiants de la Faculté d'Informatique de l'Université Nationale de La Plata suivant un cours appelé Design Centré sur l'Utilisateur.",
+    "objetive": "Notre objectif est de créer une page accessible pour découvrir les histoires des vétérans qui ont participé à la guerre des Malouines.",
+    "team_title": "Notre équipe est composée de:",
+    "contact": "Contact",
+    "contact_to": "Si vous avez des questions ou souhaitez en savoir plus sur le projet, vous pouvez nous contacter à "
+  },
+  "MapComponent": {
+    "search_placeholder": "Rechercher par nom",
+    "search_aria": "Tapez le nom du vétéran ici pour faciliter la recherche",
+    "rank": "Grade:",
+    "rank_aria": "Grade militaire",
+    "status": "Statut:",
+    "status_aria": "Statut",
+    "deceased_on": "Décédé le",
+    "place_of_birth": "Lieu de naissance:",
+    "place_of_birth_aria": "Lieu de naissance",
+    "date_of_birth": "Date de naissance:",
+    "date_of_birth_aria": "Date de naissance"
+  },
+  "MapPage": {
+    "title": "Carte interactive",
+    "description": "La carte montre la géolocalisation correspondant au lieu de décès de chacun des soldats tombés pendant la guerre des Malouines.",
+    "usage_title": "Comment utiliser la carte",
+    "usage_description_one": "En cliquant sur l'emplacement de l'un des tombés, vous pouvez accéder à un résumé de la biographie incluant le nom et le prénom, le grade, le lieu et la date de naissance.",
+    "usage_description_two": "Il est également possible de rechercher par prénom et/ou nom de famille pour les localiser rapidement."
+  },
+  "HomePage": {
+    "text_one": "Découvrez la mémoire vivante des héros des Malouines. Explorez cette ressource pour une compréhension plus approfondie d'un événement historique crucial pour l'Argentine.",
+    "image_one_alt": "Présentation de la carte de la mémoire vivante des Héros des Malouines",
+    "title": "Vétérans qui ont combattu aux Malouines",
+    "image_two_alt": "Logo de représentation d'un vétéran",
+    "images_title": "Galerie de photos des soldats argentins",
+    "image_three_alt": "Soldats argentins dans une tranchée à Puerto Yapeyú",
+    "image_four_alt": "Soldats des troupes argentines. Photo : Archives Telam",
+    "image_five_alt": "Camp d'une patrouille près de l'aéroport de la ville Télam 162",
+    "conflict_title": "Introduction au conflit",
+    "image_six_alt": "Logo de représentation d'un vétéran et du drapeau argentin",
+    "conflict_description": "Le conflit armé entre l'Argentine et le Royaume-Uni pour les îles Malouines en 1982 a entraîné la perte tragique de nombreuses vies. Dans notre pays, la guerre des Malouines est considérée comme un événement crucial qui a marqué un avant et un après dans l'histoire, provoquant une grande agitation sociale et politique, et laissant une empreinte profonde dans l'identité nationale. La mémoire des soldats tombés pendant la guerre est d'une grande importance pour les Argentins, étant considérée comme un symbole de la lutte pour la souveraineté et la dignité nationale."
+  },
+  "VeteransPage": {
+    "title": "Histoires de valeur aux Malouines",
+    "search_placeholder": "Rechercher par nom",
+    "search_aria": "Tapez le nom du vétéran ici pour faciliter la recherche",
+    "more_info_btn_aria": "Plus d'informations sur {name}",
+    "more_info_btn": "Plus d'informations"
+  },
+  "VeteranHistoryPage": {
+    "loading": "Chargement des données du vétéran...",
+    "title": "Informations supplémentaires",
+    "see_more_btn": "Voir la critique du combattant",
+    "see_btn_btn_aria": "Plus d'informations sur {name}",
+    "rank": "Rang",
+    "document": "Document",
+    "grade": "Grade",
+    "post_mortem_grade": "Grade posthume",
+    "weapon": "Arme",
+    "unit": "Unité",
+    "date_of_death": "Date de décès",
+    "place_of_death": "Lieu de décès",
+    "mother": "Mère",
+    "father": "Père",
+    "place_of_burial": "Lieu de sépulture",
+    "grave": "Tombe",
+    "date_of_birth": "Date de naissance",
+    "place_of_birth": "Lieu de naissance",
+    "combat_role": "Rôle de combat",
+    "date_of_enlistment": "Date d'enrôlement",
+    "date_of_promotion": "Date de promotion"
+  },
+  "ResolutionsPage": {
+    "title": "Résolutions de l'ONU",
+    "1960": {
+      "title": "1960",
+      "paragraph_one": "Le 14 décembre 1960, l'Assemblée générale des Nations Unies a adopté la résolution 1514 (XV) ‘Déclaration sur l'octroi de l'indépendance aux pays et aux peuples coloniaux’.",
+      "paragraph_two": "Cette résolution a marqué un tournant dans le processus de décolonisation mené par les Nations Unies, proclamant la nécessité de mettre fin, rapidement et sans condition, au colonialisme sous toutes ses formes et manifestations, et consacrant les deux principes fondamentaux devant guider le processus de décolonisation : le droit à l'autodétermination et l'intégrité territoriale."
     },
-    "Footer": {
-      "title": "Mémoires des",
-      "malvinas": "Malouines",
-      "first_section": "Liens Rapides",
-      "history": "Histoire",
-      "veterans": "Vétérans",
-      "map": "Carte",
-      "second_section": "Contact"
+    "1964": {
+      "title": "1964",
+      "paragraph_one": "En septembre 1964, lors du débat du Sous-comité III du Comité spécial de décolonisation, l'Ambassadeur José María Ruda a prononcé son célèbre plaidoyer où il a soutenu qu'il n'existe pas dans les îles une population asservie, opprimée ou soumise au colonialisme, ce qui est l'une des raisons pour lesquelles cette population ne peut revendiquer le droit à l'autodétermination des peuples comme le prétend la partie britannique.",
+      "paragraph_two": "Il a donc appelé à l'application du principe d'intégrité territoriale, reconnu dans la résolution 1514 (XV) de l'Assemblée générale, qui avait été violé par l'usurpation et l'occupation britannique de cette partie du territoire national argentin."
     },
-    "LocaleSwitcher": {
-      "es": "Espagnol",
-      "en": "Anglais",
-      "it": "Italien",
-      "pt": "Portugais",
-      "fr": "Français",
-      "label": "Langue"
+    "1965": {
+      "title": "1965",
+      "paragraph_one": "Le 16 décembre 1965, l'Assemblée générale a adopté la résolution 2065 (XX), la première exclusivement relative à la Question des Malouines, par laquelle elle a reconnu l'existence d'un différend de souveraineté entre l'Argentine et le Royaume-Uni et a invité les deux pays à négocier pour trouver une solution pacifique à la controverse."
+    },
+    "1966_1982": {
+      "title": "1966-1982",
+      "paragraph_one": "Un processus de négociations bilatérales entre l'Argentine et le Royaume-Uni a été lancé et s'est prolongé jusqu'en 1982. Pendant cette période, les deux pays ont examiné plusieurs hypothèses de résolution du différend, sans parvenir à un accord."
+    },
+    "1973": {
+      "title": "1973",
+      "paragraph_one": "La résolution 3160 (XXVIII) de l'Assemblée générale reconnaissait les efforts continus du gouvernement argentin et déclarait la nécessité d'accélérer les négociations prévues dans la résolution 2065 (XX) pour parvenir à une solution pacifique du différend de souveraineté entre les deux gouvernements sur les îles Malouines."
+    },
+    "1976": {
+      "title": "1976",
+      "paragraph_one": "En 1976, une situation de tension bilatérale a émergé, alimentée par divers actes unilatéraux britanniques dans la zone du différend. À la fin de cette année, l'Assemblée générale des Nations Unies, à une large majorité et avec l'unique opposition du Royaume-Uni, a adopté la résolution 31/49 qui reconnaissait à nouveau les efforts continus de l'Argentine pour faciliter le processus de décolonisation et promouvoir le bien-être de la population des îles, demandant aux deux gouvernements d'accélérer les négociations relatives au différend de souveraineté, comme le demande les résolutions 2065 (XX) et 3160 (XXVIII), et appelant les deux parties à s'abstenir d'adopter des décisions entraînant des modifications unilatérales de la situation pendant que les îles traversent le processus recommandé dans les résolutions mentionnées."
+    },
+    "1982": {
+      "title": "1982",
+      "paragraph_one": "En novembre 1982, l'Assemblée générale a adopté la résolution 37/9 demandant aux deux gouvernements de reprendre les négociations pour trouver une solution pacifique au différend de souveraineté. Cela a été réaffirmé dans les résolutions suivantes de l'Assemblée concernant la Question.",
+      "paragraph_two": "Entre 1982 et 1988, l'Assemblée générale a adopté 7 autres résolutions sur la question des îles Malouines, réaffirmant l'existence du différend de souveraineté entre l'Argentine et le Royaume-Uni et appelant les deux parties à reprendre les négociations.",
+      "paragraph_three": "Aucune de ces résolutions, ni celles adoptées ultérieurement par le Comité spécial de décolonisation, ne fait mention du principe d'autodétermination. De plus, en 1985, l'Assemblée générale a rejeté les deux amendements présentés par le Royaume-Uni pour inclure des références à ce principe dans le projet de résolution."
+    },
+    "1989": {
+      "title": "1989",
+      "paragraph_one": "Depuis 1989, l'examen annuel de la Question des îles Malouines a lieu principalement dans le cadre du Comité spécial de décolonisation (C24), composé actuellement de 29 États Membres. Ainsi, chaque année en juin, le C24 adopte par consensus un projet de résolution réaffirmant la validité des résolutions adoptées par l'Assemblée générale, réitérant que la manière de mettre fin à la situation coloniale particulière et spéciale concernant la Question des îles Malouines est la solution pacifique et négociée du différend de souveraineté entre l'Argentine et le Royaume-Uni, demandant aux deux gouvernements de reprendre les négociations de souveraineté et réaffirmant son soutien à la mission de bons offices du Secrétaire général."
+    },
+    "special_committee": {
+      "title": "Comité des politiques spéciales et de décolonisation (Quatrième Commission)",
+      "paragraph_one": "La Question des Malouines est également abordée chaque année lors du débat général sur les questions de décolonisation organisé par le Comité des politiques spéciales et de décolonisation (Quatrième Commission) de l'Assemblée générale. Dans ce cadre, l'Argentine et d'autres délégations (principalement d'Amérique latine) interviennent en capacité nationale et au nom de groupes de pays tels que CELAC et MERCOSUR, exprimant leur soutien aux droits de souveraineté de notre pays et appelant le Royaume-Uni à mettre fin à l'occupation coloniale par la reprise des négociations."
+    },
+    "2023": {
+      "title": "2023 - Soutien international",
+      "paragraph_one": "Le Comité spécial de décolonisation des Nations Unies (C-24) a adopté par consensus une nouvelle résolution réitérant, comme chaque année depuis 1983, l'appel au Royaume-Uni et à l'Argentine pour reprendre les négociations afin de trouver, dans les plus brefs délais, une solution pacifique et définitive à la controverse de souveraineté sur les îles Malouines, Géorgie du Sud, Sandwich du Sud et les espaces maritimes environnants.",
+      "paragraph_two": "La résolution adoptée a été co-parrainée par tous les pays latino-américains membres du Comité spécial : le Chili, la Bolivie, Cuba, l'Équateur, le Nicaragua et le Venezuela. De plus, dans le cadre de la session, les délégations de la Chine, de l'Indonésie, de la Syrie, de la Russie, d'Antigua-et-Barbuda, du Timor-Leste et de Saint-Vincent-et-les-Grenadines, membres du C-24, ont également exprimé leur soutien à la reprise des négociations de souveraineté.",
+      "paragraph_three": "De plus, plusieurs déclarations en faveur des droits argentins ont été entendues de la part des pays de la région, y compris les interventions au nom de la Communauté des États latino-américains et caribéens (CELAC) et des États Membres et Associés du MERCOSUR, prononcées par Saint-Vincent-et-les-Grenadines et l'Uruguay, respectivement ; tandis que d'autres pays de la région se sont exprimés en capacité nationale."
+    }
+  },
+  "EventsPage": {
+    "title": "Histoire de la guerre des Malouines",
+    "title_paragraph": "Les îles Malouines sont situées dans la mer argentine à environ 600 km de la côte patagonienne.",
+    "second_title": "Contexte",
+    "second_title_paragraph_one": "À partir de 1765, les îles furent occupées par les autorités espagnoles du Viceroyauté du Río de la Plata, après certains événements diplomatiques et militaires entre la France, l'Espagne et la Grande-Bretagne. Dans les années 1820, les autorités argentines basées à Buenos Aires prirent possession des îles en utilisant le même principe qui constitua la Nation argentine, nommant même Luis Vernet Gouverneur des îles le 10 juin 1829.",
+    "second_title_paragraph_two": "Le 3 janvier 1833, les îles Malouines furent usurpées par la corvette britannique Clio, qui expulsa les autorités argentines en place. Cette situation dura jusqu'au 2 avril 1982, année où débuta l'Opération Rosario, c'est-à-dire la récupération des îles par les forces militaires argentines, donnant ainsi le coup d'envoi du Conflit des Malouines de 1982. Le pavillon national flotta jusqu'au 14 juin 1982 sur les îles, moment où elles furent de nouveau usurpées par l'Empire britannique.",
+    "third_title": "Chronologie",
+    "no_events_to_show": "Aucun événement à afficher."
+  },
+  "Events": {
+    "event_1": {
+      "date": "02/04/82",
+      "description": "Après une escalade de situations tendues dans les Géorgies, entre la République argentine et la Grande-Bretagne ; des forces argentines débarquent dans la capitale des Malouines et, sans causer de pertes au petit détachement britannique ni aux Malouins, rétablissent la souveraineté argentine sur les îles. Lors de l'action, le capitaine Giachino des forces navales argentines est tué."
+    },
+    "event_2": {
+      "date": "02/04/82",
+      "description": "Création de la Base Navale Malouines, et départ des militaires britanniques et du Gouverneur colonial pour Montevideo. Sur la Plaza de Mayo à Buenos Aires, une grande concentration de soutien pour la récupération des Malouines a lieu."
+    },
+    "event_3": {
+      "date": "03/04/82",
+      "description": "Les troupes argentines rétablissent la souveraineté sur les îles Géorgies du Sud, sans faire de victimes britanniques. Pendant les opérations, trois marins argentins sont tués."
+    },
+    "event_4": {
+      "date": "03/04/82",
+      "description": "Le Conseil de sécurité des Nations Unies approuve la Résolution 502 ; qui exige un cessez-le-feu immédiat, le retrait immédiat de toutes les forces argentines des îles et exhorte les gouvernements de l'Argentine et de la Grande-Bretagne à chercher une solution diplomatique à leurs différends et à respecter pleinement les objectifs et principes de la Charte des Nations Unies."
+    },
+    "event_5": {
+      "date": "03/04/82",
+      "description": "Les États-Unis autorisent la Grande-Bretagne à utiliser l'île de l'Ascension comme base logistique."
+    },
+    "event_6": {
+      "date": "05/04/82",
+      "description": "Démission du chancelier britannique, Lord Carrington ; et la Task Force britannique quitte Portsmouth."
+    },
+    "event_7": {
+      "date": "06/04/82",
+      "description": "Le général Alexander Haig, désigné par le président des États-Unis pour intervenir dans le conflit ; rencontre à Washington le chancelier argentin, Nicanor Costa Méndez."
+    },
+    "event_8": {
+      "date": "07/04/82",
+      "description": "Le général de brigade Mario Benjamín Menéndez assume la fonction de gouverneur militaire de l'archipel."
+    },
+    "event_9": {
+      "date": "07/04/82",
+      "description": "La Grande-Bretagne établit une zone d'exclusion maritime à partir du 12 avril, couvrant un cercle centré sur 51° 40' S - 59° 30' O, avec un rayon de 200 milles nautiques."
+    },
+    "event_10": {
+      "date": "07/04/82",
+      "description": "Le gouvernement argentin convoque ses réserves et crée le Théâtre d'opérations Atlantique Sud (TOAS), désignant le vice-amiral Juan José Lombardo comme commandant."
+    },
+    "event_11": {
+      "date": "08/04/82",
+      "description": "À Londres, Haig rencontre la Première ministre britannique, Margaret Thatcher ; qui se montre inflexible."
+    },
+    "event_12": {
+      "date": "09/04/82",
+      "description": "Le Marché Commun Européen approuve des sanctions économiques contre la République argentine."
+    },
+    "event_13": {
+      "date": "10/04/82",
+      "description": "Le président argentin, le lieutenant-général Leopoldo F. Galtieri, rencontre Haig à Buenos Aires ; pendant ce temps, une manifestation massive de soutien à la récupération des Malouines a lieu sur la Plaza de Mayo."
+    },
+    "event_14": {
+      "date": "11/04/82",
+      "description": "Le pape Jean-Paul II exhorte les deux pays à abandonner les attitudes extrêmes."
+    },
+    "event_15": {
+      "date": "12/04/82",
+      "description": "Haig arrive à Londres pour poursuivre les négociations de paix."
+    },
+    "event_16": {
+      "date": "14/04/82",
+      "description": "Les démarches de Haig à Buenos Aires se poursuivent."
+    },
+    "event_17": {
+      "date": "19/04/82",
+      "description": "Costa Mendez annonce la demande d'application du Traité interaméricain d'assistance réciproque (TIAR) devant l'Organisation des États américains (OEA). Haig retourne aux États-Unis sans obtenir de résultats."
+    },
+    "event_18": {
+      "date": "20/04/82",
+      "description": "L'Argentine obtient la convocation pour la XX Réunion de Consultation des Ministres des Affaires Étrangères des 21 nations signataires du Traité de Rio de Janeiro."
+    },
+    "event_19": {
+      "date": "21/04/82",
+      "description": "Un avion Boeing 707 argentin rencontre la Task Force britannique à 19° 20' Ouest, en direction sud-ouest, étant intercepté par un avion de chasse britannique."
+    },
+    "event_20": {
+      "date": "22/04/82",
+      "description": "Un essai de débarquement anglais sur l'île San Pedro (Géorgies du Sud) échoue."
+    },
+    "event_21": {
+      "date": "23/04/82",
+      "description": "L'Argentine dénonce à l'OEA la détection de 3 échos de navires britanniques à environ 50 milles au nord de Grytviken, sur l'île San Pedro."
+    },
+    "event_22": {
+      "date": "24/04/82",
+      "description": "La Force aérienne argentine détecte la Task Force à la latitude 35° 15' Sud, longitude 27° 55' Ouest, en direction 204 et à une vitesse de 13 nœuds."
+    },
+    "event_23": {
+      "date": "25/04/82 au 26/04/82",
+      "description": "Les Britanniques attaquent la petite guarnison argentine sur l'île San Pedro, mettent hors de combat le sous-marin 'ARA Santa Fe' et occupent les Géorgies du Sud. Lors d'un épisode confus, un sous-officier de la Marine argentine est tué."
+    },
+    "event_24": {
+      "date": "30/04/82",
+      "description": "Haig annonce l'échec définitif des négociations et le président des États-Unis, Ronald Reagan, déclare formellement son soutien à la Grande-Bretagne, suivi de l'imposition d'un embargo militaire et économique à l'Argentine ; en méconnaissant le Traité interaméricain d'assistance réciproque."
+    },
+    "event_25": {
+      "date": "30/04/82",
+      "description": "L'Argentine présente une note à l'ONU, informant qu'elle ferait usage du droit à la légitime défense si elle était attaquée."
+    },
+    "event_26": {
+      "date": "30/04/82",
+      "description": "De manière accidentelle, un hélicoptère de l'Armée argentine s'écrase à Caleta Olivia, tuant 10 militaires."
+    },
+    "event_27": {
+      "date": "01/05/82",
+      "description": "Les Britanniques commencent les attaques aériennes sur les Malouines, endommageant légèrement la piste de l'aéroport de la capitale des îles."
+    },
+    "event_28": {
+      "date": "01/05/82",
+      "description": "Les premiers combats aéro-navals ont lieu, impliquant les navires argentins 'Forrest' et 'GC82 Islas Malvinas'. Une attaque aérienne cible le 'ELMA Formosa', qui est touché par une bombe qui n'explose pas."
+    },
+    "event_29": {
+      "date": "01/05/82",
+      "description": "Le sous-marin argentin ARA San Luis entre en contact avec des unités ennemies et lance une attaque de torpilles, sans pouvoir évaluer le résultat."
+    },
+    "event_30": {
+      "date": "02/05/82",
+      "description": "Le président du Pérou, Belaunde Terry, présente une proposition de paix au président argentin, qui est préliminairement acceptée avec quelques modifications."
+    },
+    "event_31": {
+      "date": "02/05/82",
+      "description": "Le sous-marin nucléaire britannique 'HMS Conqueror' torpille et coule le croiseur argentin 'ARA Gral. Belgrano' en dehors de la zone d'exclusion maritime. 323 membres d'équipage sont tués. Le destroyer 'ARA Bouchard' reçoit un impact, qui serait celui d'une torpille qui n'a pas explosé."
+    },
+    "event_32": {
+      "date": "03/05/82",
+      "description": "Le aviso 'ARA Alférez Sobral' engage un combat avec des hélicoptères britanniques, recevant ensuite des impacts de missiles qui détruisent son pont de commandement. Lors de l'action, son commandant, le capitaine Gómez Roca, ainsi que sept autres membres d'équipage sont tués."
+    },
+    "event_33": {
+      "date": "04/05/82",
+      "description": "Des avions navals argentins, équipés de missiles Exocet, attaquent le destroyer britannique 'HMS Sheffield', qui coule ensuite. 20 marins britanniques sont tués."
+    },
+    "event_34": {
+      "date": "06/05/82",
+      "description": "L'ONU propose un plan de paix basé sur un cessez-le-feu immédiat, le retrait des troupes argentines et de la flotte britannique, le début des négociations, la suspension des sanctions économiques contre l'Argentine et l'administration des îles de l'Atlantique Sud par l'ONU pendant les négociations. Il n'a pas été accepté par la Grande-Bretagne."
+    },
+    "event_35": {
+      "date": "07/05/82",
+      "description": "Londres étend le blocus naval à seulement 12 milles de la côte argentine. Buenos Aires dénonce devant l'ONU et le TIAR que ce blocus est un acte supplémentaire d'agression de la part du pays européen."
+    },
+    "event_36": {
+      "date": "09/05/82",
+      "description": "Le bateau de pêche argentin 'Narwal' est coulé par l'aviation britannique, tuant le contremaître Rupp du navire marchand. De plus, un hélicoptère de l'Armée qui est venu secourir les survivants est abattu, tuant ses 3 membres d'équipage."
+    },
+    "event_37": {
+      "date": "10/05/82",
+      "description": "La Grande-Bretagne décrète une zone d'exclusion aérienne de 100 milles nautiques autour de l'île de l'Ascension."
+    },
+    "event_38": {
+      "date": "10/05/82",
+      "description": "La frégate britannique 'HMS Alacrity' coule le 'ARA Isla de los Estados' au milieu du détroit de San Carlos. Le capitaine Panigadi et 21 autres membres d'équipage sont tués."
+    },
+    "event_39": {
+      "date": "14/05/82",
+      "description": "Les 189 Argentins capturés sur l'île San Pedro (Géorgies du Sud) arrivent à Buenos Aires. Parmi eux, les travailleurs dont la présence dans l'archipel a provoqué l'affrontement. Les avions britanniques continuent leurs attaques sur les îles."
+    },
+    "event_40": {
+      "date": "15/05/82",
+      "description": "Des navires britanniques bombardent l'aérodrome Calderón de l'île de Borbón, endommageant dix avions argentins au sol."
+    },
+    "event_41": {
+      "date": "16/05/82",
+      "description": "En raison des attaques aériennes britanniques successives, les navires argentins 'ELMA Río Carcarañá' et 'ARA Bahía Buen Suceso' sont mis hors de combat."
+    },
+    "event_42": {
+      "date": "20/05/82",
+      "description": "Un hélicoptère Sea King britannique s'écrase à Punta Arenas (Chili). Aucune trace ni débris des membres d'équipage n'a été trouvée."
+    },
+    "event_43": {
+      "date": "20/05/82",
+      "description": "Javier Pérez de Cuellar, Secrétaire général de l'ONU, annonce que ses efforts pour la paix ont échoué. Le gouvernement péruvien présente une proposition, qui échoue également."
+    },
+    "event_44": {
+      "date": "21/05/82",
+      "description": "Après avoir subi d'importants dommages sur 4 frégates, le naufrage de la frégate 'HMS Ardent', la perte de 3 avions Harrier et 2 hélicoptères, les Britanniques parviennent à établir une tête de pont à Puerto San Carlos, avec l'opposition de 2 sections du RI 25. Les combats aéro-navals ont été très violents, reconnaissant dans cette bataille la bravoure des pilotes argentins, qui ont perdu 12 avions et 3 hélicoptères."
+    },
+    "event_45": {
+      "date": "22/05/82",
+      "description": "Le 'GC83 Río Iguazú' engage un combat aéro-naval contre 3 avions britanniques, perdant un homme et abattant un Harrier."
+    },
+    "event_46": {
+      "date": "23/05/82",
+      "description": "Le 'Monsunen' est intensément bombardé par les frégates britanniques 'HMS Brilliant' et 'HMS Yarmouth', réussissant à éviter l'assaillant sans dommage."
+    },
+    "event_47": {
+      "date": "24/05/82",
+      "description": "Après de nombreux attaques aériennes, la frégate britannique 'HMS Antelope' finit par couler dans les eaux du détroit de San Carlos."
+    },
+    "event_48": {
+      "date": "24/05/82",
+      "description": "Le Marché Commun Européen décide de maintenir les sanctions économiques contre l'Argentine pour une durée indéterminée, à l'exception de l'Italie et de l'Irlande qui ne se conforment pas à la mesure."
+    },
+    "event_49": {
+      "date": "25/05/82",
+      "description": "Les avions argentins endommagent trois frégates lance-missiles et coulent le destroyer 'HMS Coventry' ainsi que le transport lourd 'Atlantic Conveyor'."
+    },
+    "event_50": {
+      "date": "26/05/82",
+      "description": "Le Conseil de sécurité des Nations Unies approuve la Résolution 505 ; qui demande au Secrétaire général d'entreprendre une mission renouvelée de bons offices, en établissant immédiatement des contacts avec les parties pour négocier des conditions mutuellement acceptables pour un cessez-le-feu ; et exhorte les parties en conflit à coopérer pleinement avec le Secrétaire général dans sa mission."
+    },
+    "event_51": {
+      "date": "27/05/82 au 28/05/82",
+      "description": "Les troupes anglaises, renforcées par de nouveaux contingents, avancent sur Darwin et Pradera del Ganso. Au cours des actions, le lieutenant-colonel Jones des forces britanniques est tué."
+    },
+    "event_52": {
+      "date": "28/05/82",
+      "description": "Le pape Jean-Paul II formule une vive demande pour une paix juste et honorable lors de sa visite à Londres. D'autre part, lors d'une réunion du TIAR, une résolution favorable à l'Argentine est approuvée."
+    },
+    "event_53": {
+      "date": "29/05/82",
+      "description": "Après de sanglants combats, la garnison argentine de Darwin doit se rendre."
+    },
+    "event_54": {
+      "date": "30/05/82",
+      "description": "L'aviation argentine, après une opération intense, parvient à endommager le porte-avions 'HMS Invincible'. Londres n'a jamais confirmé le fait."
+    },
+    "event_55": {
+      "date": "01/06/82",
+      "description": "Les avant-postes britanniques arrivent au mont Kent, à environ 20 kilomètres de Puerto Argentino. Les duels d'artillerie terrestre commencent."
+    },
+    "event_56": {
+      "date": "01/06/82",
+      "description": "L'avion Hércules TC-63 de la FAA est abattu par un Harrier, tuant le vicecomodore Meisner et 6 autres membres d'équipage."
+    },
+    "event_57": {
+      "date": "03/06/82",
+      "description": "À La Havane, le ministre des Affaires étrangères Costa Méndez prononce un discours devant les représentants des Non-Alignés."
+    },
+    "event_58": {
+      "date": "04/06/82",
+      "description": "Aux Nations Unies, un nouveau projet de cessez-le-feu est vetoé par les États-Unis et la Grande-Bretagne."
+    },
+    "event_59": {
+      "date": "07/06/82",
+      "description": "Un avion d'exploration Lear-Jet argentin est abattu par un missile Sea Dart, tuant le vicecomodore De la Colina et 4 autres membres d'équipage."
+    },
+    "event_60": {
+      "date": "08/06/82",
+      "description": "L'Armée de l'air argentine repousse une tentative de débarquement anglais à Hoya Chasco. Le transport de troupes 'RFA Sir Galahad' et une barge de débarquement coulent ; tandis que la frégate 'HMS Plymouth' et le transport de troupes 'RFA Sir Tristam' sont gravement endommagés."
+    },
+    "event_61": {
+      "date": "11/06/82",
+      "description": "Le pape Jean-Paul II arrive en Argentine pour convoquer une réunion de prière pour la paix, au milieu d'une fervente manifestation d'affection."
+    },
+    "event_62": {
+      "date": "12/06/82",
+      "description": "Le 'HMS Glamorgan' est mis hors de combat par un Exocet argentin tiré depuis la côte. Lors de l'action, 13 membres d'équipage britanniques sont tués."
+    },
+    "event_63": {
+      "date": "12/06/82",
+      "description": "Les troupes anglaises attaquent les montagnes Two Sisters, Longdon et Harriet, à la recherche de la bataille finale pour Puerto Argentino. Un hélicoptère anglais lance un missile qui frappe le toit du Département du renseignement de l'Armée à Puerto Argentino."
+    },
+    "event_64": {
+      "date": "13/06/82",
+      "description": "Lors d'une avancée difficile, les forces britanniques pénètrent les défenses argentines, occupant toutes les hauteurs entourant Puerto Argentino. Les Anglais tentent un débarquement sur la péninsule Camber, qui est rejeté."
+    },
+    "event_65": {
+      "date": "13/06/82",
+      "description": "Des avions argentins attaquent le poste de commandement du général Jeremy Moore ; ce dernier en sort indemne."
+    },
+    "event_66": {
+      "date": "14/06/82",
+      "description": "Après de durs combats, la garnison argentine de Puerto Argentino doit se rendre. Les généraux Jeremy Moore et Mario Benjamín Menéndez, respectivement commandant des forces britanniques et gouverneur militaire des Îles Malouines, établissent le cessez-le-feu et conviennent des conditions de la reddition."
+    },
+    "event_67": {
+      "date": "14/06/82",
+      "description": "À Buenos Aires, à la suite des nouvelles, une concentration de rejet de la capitulation est organisée dans la soirée. Des troubles se produisent lors de la manifestation, qui sont réprimés par la police."
+    },
+    "event_68": {
+      "date": "20/06/82",
+      "description": "Un groupe de forces britanniques attaque la base scientifique 'Corbeta Uruguay' de l'île Morrell (Sandwich du Sud) et expulse de force les scientifiques argentins qui y étaient établis. Avec cet acte, l'agression coloniale britannique prend fin et les actions militaires proprement dites cessent."
+    },
+    "event_69": {
+      "date": "20/06/82",
+      "description": "La Grande-Bretagne déclare officiellement la fin des hostilités."
     }
   }
+}

@@ -1,10 +1,11 @@
 "use client";
 
-import styles from './Veteranos.module.css';
+import styles from "./Veteranos.module.css";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useGeoJsonData } from "../hook/useGeoJsonData";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 function processUrl(url) {
   if (url.startsWith(".")) {
@@ -30,7 +31,8 @@ export default function VeteranosPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredVeterans, setFilteredVeterans] = useState([]);
   const baseUrl = "https://www.bienestar.mil.ar/malvinas";
-  const defaultPhotoUrl = "soldado2.png"; // Ruta de la imagen por defecto
+  const defaultPhotoUrl = "soldado2.png";
+  const t = useTranslations("VeteransPage");
 
   const router = useRouter();
 
@@ -59,17 +61,15 @@ export default function VeteranosPage() {
 
   return (
     <main className="container my-5 p-5" role="main">
-      <h1 className={`text-center ${styles.titulo} mb-5`}>
-        Historias de valor en las Malvinas
-      </h1>
+      <h1 className={`text-center ${styles.titulo} mb-5`}>{t("title")}</h1>
       <input
-          type="text"
-          placeholder="Buscar por nombre"
-          aria-label="Escribe el nombre del veterano aquí para facilitar su búsqueda"
-          className={`form-control mb-4 ${styles.searchInput}`}
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        type="text"
+        placeholder={t("search_placeholder")}
+        aria-label={t('search_aria')}
+        className={`form-control mb-4 ${styles.searchInput}`}
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
       <div className="row">
         {filteredVeterans.map((veteran, index) => {
           const props = veteran.properties;
@@ -99,10 +99,12 @@ export default function VeteranosPage() {
                       <p className="card-text">{props.Escalafon}</p>
                       <button
                         className="btn btn-success"
-                        aria-label={`Más información sobre ${props.Nombre}`}
+                        aria-label={t("more_info_btn_aria", {
+                          name: props.Nombre,
+                        })}
                         onClick={() => handleMoreInfo(veteran)}
                       >
-                        Más información
+                        {t("more_info_btn")}
                       </button>
                     </div>
                   </>

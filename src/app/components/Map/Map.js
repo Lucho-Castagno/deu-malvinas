@@ -6,6 +6,7 @@ import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import L from 'leaflet';
 import { useGeoJsonData } from '../../hook/useGeoJsonData';
 import styles from './Map.module.css';
+import { useTranslations } from 'next-intl';
 
 function CenterMapOnMarker({ position, resetPosition }) {
   const map = useMap();
@@ -27,6 +28,7 @@ export default function Map() {
   const [selectedMarkerPosition, setSelectedMarkerPosition] = useState(null);
   const [initialCenter, setInitialCenter] = useState([-51.790304, -59.490862]); // Posición central inicial
   const data = useGeoJsonData();
+  const t = useTranslations("MapComponent");
 
   const custom_marker = L.icon({
     iconUrl: 'soldado-marker.png',
@@ -64,7 +66,8 @@ export default function Map() {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Buscar por nombre"
+          placeholder={t('search_placeholder')}
+          aria-label={t('search_aria')}
           className={`form-control mb-4 ${styles.searchInput}`}
         />
       </div>
@@ -85,12 +88,12 @@ export default function Map() {
             <Popup>
               <div>
                 <h3>{feature.properties.Nombre}</h3>
-                <p aria-label="Rango militar"><strong>Rango:</strong> {feature.properties.Grado}</p>
+                <p aria-label={t('rank_aria')}><strong>{t('rank')}</strong> {feature.properties.Grado}</p>
                 {feature.properties.F_Deceso && (
-                  <p aria-label="Estado de fallecimiento"><strong>Estado:</strong> Fallecido el {feature.properties.F_Deceso}</p>
+                  <p aria-label={t('status_aria')}><strong>{t('status')}</strong> {t('deceased_on')} {feature.properties.F_Deceso}</p>
                 )}
-                <p aria-label="Lugar de nacimiento"><strong>Lugar de nacimiento:</strong> {feature.properties.L_Nac}</p>
-                <p aria-label="Fecha de nacimiento"><strong>Fecha de nacimiento:</strong> {feature.properties.F_Nac}</p>
+                <p aria-label={t('place_of_birth_aria')}><strong>{t('place_of_birth')}</strong> {feature.properties.L_Nac}</p>
+                <p aria-label={t('date_of_birth_aria')}><strong>{t('date_of_birth')}</strong> {feature.properties.F_Nac}</p>
               </div>
             </Popup>
           </Marker>

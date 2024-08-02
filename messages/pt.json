@@ -1,30 +1,449 @@
 {
-    "Header": {
-      "title": "Memórias das",
-      "malvinas": "Malvinas",
-      "home": "Início",
-      "veterans": "Veteranos",
-      "map": "Mapa",
-      "history": "História",
-      "resolutions": "Resoluções",
-      "about": "Sobre Nós",
-      "configuration": "Configuração"
+  "Header": {
+    "title_aria": "Memórias das Malvinas - Início",
+    "title": "Memórias de",
+    "malvinas": "Malvinas",
+    "menu_aria": "Ativar navegação",
+    "logo_alt": "Logotipo da página - Memórias das Malvinas",
+    "home": "Início",
+    "veterans": "Veteranos",
+    "map": "Mapa",
+    "history": "História",
+    "resolutions": "Resoluções",
+    "about": "Sobre Nós",
+    "configuration": "Configuração"
+  },
+  "Footer": {
+    "title": "Memórias de",
+    "malvinas": "Malvinas",
+    "logo_alt": "Logotipo da página - Memórias das Malvinas",
+    "first_section": "Links Rápidos",
+    "history": "História",
+    "veterans": "Veteranos",
+    "map": "Mapa",
+    "second_section": "Contato"
+  },
+  "LocaleSwitcher": {
+    "es": "Espanhol",
+    "en": "Inglês",
+    "it": "Italiano",
+    "pt": "Português",
+    "fr": "Francês",
+    "label": "Idioma"
+  },
+  "ConfigurationPage": {
+    "title": "Configuração",
+    "shortcut_title": "Atalhos",
+    "shortcut_subtitle": "Atalhos de teclado",
+    "search": "Buscar",
+    "text_size_reduce": "Reduzir o tamanho do texto",
+    "text_size_increase": "Aumentar o tamanho do texto"
+  },
+  "AboutPage": {
+    "title": "Sobre Nós",
+    "intro": "Somos um grupo de estudantes da Faculdade de Informática da Universidade Nacional de La Plata que estão cursando uma disciplina chamada Design Centrado no Usuário.",
+    "objetive": "Nosso objetivo é criar uma página acessível para conhecer as histórias dos veteranos que participaram da guerra das Malvinas.",
+    "team_title": "Nossa equipe é composta por:",
+    "contact": "Contato",
+    "contact_to": "Se você tiver dúvidas ou quiser saber mais sobre o projeto, pode nos contatar em "
+  },
+  "MapComponent": {
+    "search_placeholder": "Buscar por nome",
+    "search_aria": "Digite o nome do veterano aqui para facilitar a busca",
+    "rank": "Patente:",
+    "rank_aria": "Patente militar",
+    "status": "Estado:",
+    "status_aria": "Estado",
+    "deceased_on": "Falecido em",
+    "place_of_birth": "Local de nascimento:",
+    "place_of_birth_aria": "Local de nascimento",
+    "date_of_birth": "Data de nascimento:",
+    "date_of_birth_aria": "Data de nascimento"
+  },
+  "MapPage": {
+    "title": "Mapa interativo",
+    "description": "O mapa mostra a geolocalização correspondente ao local de morte de cada um dos soldados caídos durante a Guerra das Malvinas.",
+    "usage_title": "Como usar o mapa",
+    "usage_description_one": "Clicando na localização de um dos caídos, você pode acessar um resumo da biografia que inclui sobrenome e nome, patente, local e data de nascimento.",
+    "usage_description_two": "Também é possível buscar pelo nome e/ou sobrenome para localizá-los rapidamente."
+  },
+  "HomePage": {
+    "text_one": "Descubra a memória viva dos heróis das Malvinas. Explore este recurso para uma compreensão mais profunda de um evento histórico crucial para a Argentina.",
+    "image_one_alt": "Apresentação do mapa da memória viva dos Heróis das Malvinas",
+    "title": "Veteranos que lutaram nas Malvinas",
+    "image_two_alt": "Logo de representação de um veterano",
+    "images_title": "Galeria de fotos dos soldados argentinos",
+    "image_three_alt": "Soldados argentinos em uma trincheira em Puerto Yapeyú",
+    "image_four_alt": "Soldados das tropas argentinas. Foto: Arquivo Telam",
+    "image_five_alt": "Acampamento de uma patrulha perto do aeroporto da cidade Télam 162",
+    "conflict_title": "Introdução ao conflito",
+    "image_six_alt": "Logo de representação de um veterano e a bandeira da Argentina",
+    "conflict_description": "O conflito armado entre Argentina e Reino Unido pelas Ilhas Malvinas em 1982 resultou na trágica perda de muitas vidas. Em nosso país, a Guerra das Malvinas é considerada um evento crucial que marcou um antes e um depois na história, causando uma grande comoção social e política, e deixando uma profunda marca na identidade nacional. A memória dos soldados caídos na guerra é de grande importância para os argentinos, sendo considerada um símbolo da luta pela soberania e dignidade nacional."
+  },
+  "VeteransPage": {
+    "title": "Histórias de valor nas Malvinas",
+    "search_placeholder": "Buscar por nome",
+    "search_aria": "Digite o nome do veterano aqui para facilitar a busca",
+    "more_info_btn_aria": "Mais informações sobre {name}",
+    "more_info_btn": "Mais informações"
+  },
+  "VeteranHistoryPage": {
+    "loading": "Carregando dados do veterano...",
+    "title": "Informações adicionais",
+    "see_more_btn": "Ver resenha do combatente",
+    "see_btn_btn_aria": "Mais informações sobre {name}",
+    "rank": "Escalão",
+    "document": "Documento",
+    "grade": "Grau",
+    "post_mortem_grade": "Grau póstumo",
+    "weapon": "Arma",
+    "unit": "Unidade",
+    "date_of_death": "Data de falecimento",
+    "place_of_death": "Local de falecimento",
+    "mother": "Mãe",
+    "father": "Pai",
+    "place_of_burial": "Local de enterro",
+    "grave": "Túmulo",
+    "date_of_birth": "Data de nascimento",
+    "place_of_birth": "Local de nascimento",
+    "combat_role": "Função de combate",
+    "date_of_enlistment": "Data de alistamento",
+    "date_of_promotion": "Data de promoção"
+  },
+  "ResolutionsPage": {
+    "title": "Resoluções da ONU",
+    "1960": {
+      "title": "1960",
+      "paragraph_one": "Em 14 de dezembro de 1960, a Assembleia Geral das Nações Unidas adotou a Resolução 1514 (XV) 'Declaração sobre a Concessão de Independência aos Países e Povos Coloniais'.",
+      "paragraph_two": "Esta resolução marcou um marco no processo de descolonização promovido pelas Nações Unidas, proclamando a necessidade de acabar rápida e incondicionalmente com o colonialismo em todas as suas formas e manifestações, e consagrando os dois princípios fundamentais que devem orientar o processo de descolonização: autodeterminação e integridade territorial."
     },
-    "Footer": {
-      "title": "Memórias das",
-      "malvinas": "Malvinas",
-      "first_section": "Links Rápidos",
-      "history": "História",
-      "veterans": "Veteranos",
-      "map": "Mapa",
-      "second_section": "Contato"
+    "1964": {
+      "title": "1964",
+      "paragraph_one": "Em setembro de 1964, durante o debate do Subcomitê III do Comitê Especial de Descolonização, o Embaixador José María Ruda fez seu famoso argumento afirmando que não havia população nas ilhas que fosse oprimida, subjugada ou sujeita ao colonialismo, uma das razões pelas quais essa população não tem direito à autodeterminação reivindicada pela parte britânica.",
+      "paragraph_two": "Ele, portanto, pediu a aplicação do princípio da integridade territorial, reconhecido na Resolução 1514 (XV) da Assembleia Geral, que havia sido violado pela usurpação e ocupação britânica daquela parte do território nacional argentino."
     },
-    "LocaleSwitcher": {
-      "es": "Espanhol",
-      "en": "Inglês",
-      "it": "Italiano",
-      "pt": "Português",
-      "fr": "Francês",
-      "label": "Idioma"
+    "1965": {
+      "title": "1965",
+      "paragraph_one": "Em 16 de dezembro de 1965, a Assembleia Geral adotou a Resolução 2065 (XX), a primeira exclusivamente referente à Questão das Malvinas, que reconheceu a existência de uma disputa de soberania entre a Argentina e o Reino Unido e convidou ambos os países a negociar para encontrar uma solução pacífica para a controvérsia."
+    },
+    "1966_1982": {
+      "title": "1966-1982",
+      "paragraph_one": "Um processo de negociações bilaterais entre a Argentina e o Reino Unido começou, estendendo-se até 1982. Durante esse período, os dois países analisaram várias hipóteses de resolução da disputa, mas não conseguiram chegar a um acordo."
+    },
+    "1973": {
+      "title": "1973",
+      "paragraph_one": "A Resolução 3160 (XXVIII) da Assembleia Geral reconheceu os contínuos esforços feitos pelo governo argentino e declarou a necessidade de acelerar as negociações previstas na Resolução 2065 (XX) para chegar a uma solução pacífica da disputa de soberania entre os dois governos sobre as Ilhas Malvinas."
+    },
+    "1976": {
+      "title": "1976",
+      "paragraph_one": "Em 1976, surgiu uma situação de tensão bilateral, alimentada por várias ações unilaterais britânicas na área da disputa. No final daquele ano, a Assembleia Geral das Nações Unidas, por ampla maioria e com a única oposição do Reino Unido, adotou a Resolução 31/49, que mais uma vez reconheceu os contínuos esforços da Argentina para facilitar o processo de descolonização e promover o bem-estar da população das Ilhas, pediu a ambos os governos que acelerassem as negociações sobre a disputa de soberania, conforme solicitado nas Resoluções 2065 (XX) e 3160 (XXVIII), e instou ambas as partes a se absterem de adotar decisões que impliquem a introdução de modificações unilaterais na situação enquanto as Ilhas estiverem passando pelo processo recomendado nas resoluções mencionadas."
+    },
+    "1982": {
+      "title": "1982",
+      "paragraph_one": "Em novembro de 1982, a Assembleia Geral adotou a Resolução 37/9, que solicitou a ambos os governos que retomassem as negociações para encontrar uma solução pacífica para a disputa de soberania. Isso foi reiterado nas resoluções subsequentes da Assembleia sobre a Questão.",
+      "paragraph_two": "Entre 1982 e 1988, a Assembleia Geral adotou outras 7 resoluções sobre a questão das Ilhas Malvinas, reafirmando a existência da disputa de soberania entre a Argentina e o Reino Unido e chamando ambas as partes a retomarem as negociações.",
+      "paragraph_three": "Nenhuma dessas resoluções, nem as adotadas posteriormente pelo Comitê Especial de Descolonização, mencionou o princípio da autodeterminação. Além disso, em 1985, a Assembleia Geral rejeitou as duas emendas apresentadas pelo Reino Unido para incluir referências a este princípio no projeto de resolução."
+    },
+    "1989": {
+      "title": "1989",
+      "paragraph_one": "Desde 1989, o exame anual da Questão das Ilhas Malvinas ocorre principalmente no âmbito do Comitê Especial de Descolonização (C24), atualmente composto por 29 Estados-Membros. Assim, em junho de cada ano, o C24 adota por consenso um projeto de resolução reafirmando a validade das resoluções adotadas pela Assembleia Geral, reiterando que a maneira de acabar com a situação colonial especial e particular sobre a questão das Ilhas Malvinas é por meio de uma solução pacífica e negociada para a disputa de soberania entre a Argentina e o Reino Unido, solicitando a ambos os governos que retomem as negociações de soberania e reiterando seu apoio à missão de bons ofícios do Secretário-Geral."
+    },
+    "special_committee": {
+      "title": "Comissão Política Especial e de Descolonização (Quarta Comissão)",
+      "paragraph_one": "A Questão das Malvinas também é abordada anualmente no debate geral sobre questões de Descolonização realizado pela Comissão Política Especial e de Descolonização (Quarta Comissão) da Assembleia Geral. Nesse contexto, a Argentina e outras delegações (principalmente da América Latina) fazem intervenções em capacidade nacional e em nome de grupos de países como CELAC e MERCOSUL, expressando seu apoio aos direitos de soberania do nosso país e pedindo ao Reino Unido que ponha fim à ocupação colonial através da retomada das negociações."
+    },
+    "2023": {
+      "title": "2023 - Apoio Internacional",
+      "paragraph_one": "O Comitê Especial de Descolonização das Nações Unidas (C-24) adotou por consenso uma nova resolução reiterando, como todos os anos desde 1983, o apelo ao Reino Unido e à Argentina para retomar as negociações para encontrar, o mais breve possível, uma solução pacífica e definitiva para a disputa de soberania sobre as Ilhas Malvinas, Geórgia do Sul, Ilhas Sandwich do Sul e áreas marítimas circundantes.",
+      "paragraph_two": "A resolução adotada foi co-patrocinada por todos os países latino-americanos membros do Comitê Especial: Chile, Bolívia, Cuba, Equador, Nicarágua e Venezuela. Além disso, durante a sessão, também manifestaram apoio à retomada das negociações de soberania as delegações da China, Indonésia, Síria, Rússia, Antígua e Barbuda, Timor-Leste e São Vicente e Granadinas, membros do C-24.",
+      "paragraph_three": "Além disso, foram ouvidas várias declarações em apoio aos direitos argentinos por parte dos países da região, incluindo as intervenções em nome da Comunidade de Estados Latino-Americanos e Caribenhos (CELAC) e dos Estados Membros e Associados do MERCOSUL, feitas por São Vicente e Granadinas e Uruguai, respectivamente; enquanto outros países da região se pronunciaram em capacidade nacional."
+    }
+  },
+  "EventsPage": {
+    "title": "História da Guerra das Malvinas",
+    "title_paragraph": "As Ilhas Malvinas estão situadas no Mar Argentino a cerca de 600 km da costa patagônica.",
+    "second_title": "Antecedentes",
+    "second_title_paragraph_one": "A partir de 1765, as ilhas foram ocupadas pelas autoridades espanholas do Vice-Reino do Rio da Prata, após alguns eventos diplomáticos e militares entre França, Espanha e Grã-Bretanha. Na década de 1820, as autoridades argentinas com sede em Buenos Aires tomaram posse das ilhas utilizando o mesmo princípio que constituiu a Nação Argentina, nomeando inclusive Luis Vernet como Governador das ilhas em 10 de junho de 1829.",
+    "second_title_paragraph_two": "Em 3 de janeiro de 1833, as Ilhas Malvinas foram usurpadas pela corveta britânica Clio, que expulsou as autoridades argentinas em exercício. Essa situação durou até 2 de abril de 1982, ano em que iniciou a Operação Rosario, ou seja, a recuperação das ilhas pelas forças militares argentinas, marcando o início do Conflito das Malvinas de 1982. A bandeira nacional tremulou até 14 de junho de 1982 nas ilhas, momento em que foram novamente usurpadas pelo Império Britânico.",
+    "third_title": "Linha do tempo",
+    "no_events_to_show": "Nenhum evento para exibir."
+  },
+  "Events": {
+    "event_1": {
+      "date": "02/04/82",
+      "description": "Após uma escalada de situações tensas nas Georgias, entre a República Argentina e a Grã-Bretanha, forças argentinas desembarcam na capital das Malvinas e, sem causar baixas ao pequeno destacamento britânico ou aos habitantes das Malvinas, reestabelecem a soberania argentina sobre as ilhas. Durante a operação, morre o capitão Giachino das forças navais argentinas."
+    },
+    "event_2": {
+      "date": "02/04/82",
+      "description": "Cria-se o Apostadero Naval Malvinas, e partem os militares ingleses e o Governador Colonial com destino a Montevidéu. Na Plaza de Mayo em Buenos Aires, realiza-se uma concentração massiva de apoio à recuperação das Malvinas."
+    },
+    "event_3": {
+      "date": "03/04/82",
+      "description": "Tropas argentinas recuperam a soberania sobre as ilhas Georgias do Sul, sem causar baixas aos britânicos. Durante as operações, falecem três marinheiros argentinos."
+    },
+    "event_4": {
+      "date": "03/04/82",
+      "description": "O Conselho de Segurança das Nações Unidas aprova a Resolução 502; que exige a cessação imediata das hostilidades, a retirada imediata de todas as forças argentinas das ilhas e exorta os governos da Argentina e da Grã-Bretanha a buscar uma solução diplomática para suas diferenças e a respeitar plenamente os propósitos e princípios da Carta das Nações Unidas."
+    },
+    "event_5": {
+      "date": "03/04/82",
+      "description": "Os Estados Unidos autorizam a Grã-Bretanha a usar a ilha Ascensão como base logística."
+    },
+    "event_6": {
+      "date": "05/04/82",
+      "description": "Renuncia o chanceler inglês, Lord Carrington; e a Task Force britânica zarpa de Portsmouth."
+    },
+    "event_7": {
+      "date": "06/04/82",
+      "description": "O general Alexander Haig, designado pelo presidente dos EUA para interceder no conflito, se entrevista em Washington com o chanceler argentino, Nicanor Costa Méndez."
+    },
+    "event_8": {
+      "date": "07/04/82",
+      "description": "O general de brigada Mario Benjamín Menéndez assume o cargo de governador militar do arquipélago."
+    },
+    "event_9": {
+      "date": "07/04/82",
+      "description": "A Grã-Bretanha estabelece uma zona de exclusão marítima a partir de 12 de abril, abrangendo um círculo centrado em 51° 40' S - 59° 30' W, e com um raio de 200 milhas náuticas."
+    },
+    "event_10": {
+      "date": "07/04/82",
+      "description": "O Governo Argentino convoca suas reservas e cria o Teatro de Operações Atlântico Sul (TOAS), designando o vice-almirante Juan José Lombardo como seu comandante."
+    },
+    "event_11": {
+      "date": "08/04/82",
+      "description": "Em Londres, Haig se entrevista com a primeira-ministra britânica, Margaret Thatcher, que se mostra inflexível."
+    },
+    "event_12": {
+      "date": "09/04/82",
+      "description": "O Mercado Comum Europeu aprova sanções econômicas contra a República Argentina."
+    },
+    "event_13": {
+      "date": "10/04/82",
+      "description": "O presidente argentino, tenente-general Leopoldo F. Galtieri, mantém uma reunião com Haig em Buenos Aires; enquanto isso, na Plaza de Mayo, realiza-se uma manifestação multitudinária de apoio à recuperação das Ilhas Malvinas."
+    },
+    "event_14": {
+      "date": "11/04/82",
+      "description": "O papa João Paulo II exorta ambos os países a abandonar atitudes extremas."
+    },
+    "event_15": {
+      "date": "12/04/82",
+      "description": "Haig chega a Londres para continuar as negociações de paz."
+    },
+    "event_16": {
+      "date": "14/04/82",
+      "description": "Continuam as negociações de Haig em Buenos Aires."
+    },
+    "event_17": {
+      "date": "19/04/82",
+      "description": "Costa Mendez anuncia o pedido de aplicação do Tratado Interamericano de Assistência Recíproca (TIAR) diante da Organização dos Estados Americanos (OEA). Haig retorna aos Estados Unidos sem obter resultados."
+    },
+    "event_18": {
+      "date": "20/04/82",
+      "description": "A Argentina consegue convocar a XX Reunião de Consulta de Ministros das Relações Exteriores das 21 nações signatárias do Tratado do Rio de Janeiro."
+    },
+    "event_19": {
+      "date": "21/04/82",
+      "description": "Um avião Boeing 707 argentino encontra a Task Force britânica em 19° 20' Oeste, com rumo sudoeste, sendo interceptado por um avião de caça britânico."
+    },
+    "event_20": {
+      "date": "22/04/82",
+      "description": "Fracassa uma tentativa de desembarque inglês na ilha San Pedro (Georgias do Sul)."
+    },
+    "event_21": {
+      "date": "23/04/82",
+      "description": "A Argentina denuncia na OEA que foram detectados 3 ecos de navios britânicos a cerca de 50 milhas ao norte de Grytviken, na ilha San Pedro."
+    },
+    "event_22": {
+      "date": "24/04/82",
+      "description": "A Força Aérea Argentina detecta a Task Force na latitude 35° 15' Sul, longitude 27° 55' Oeste, com rumo 204 e velocidade de 13 nós."
+    },
+    "event_23": {
+      "date": "25/04/82 a 26/04/82",
+      "description": "Os ingleses atacam a pequena guarnição argentina na ilha San Pedro, colocam fora de combate o submarino 'ARA Santa Fe' e ocupam as Georgias do Sul. Em um episódio confuso, um suboficial da Armada Argentina é morto."
+    },
+    "event_24": {
+      "date": "30/04/82",
+      "description": "Haig anuncia o fracasso definitivo das negociações e o presidente dos Estados Unidos, Ronald Reagan, declara formalmente seu apoio à Grã-Bretanha, seguido pela imposição de um embargo militar e econômico à Argentina, desconsiderando o Tratado Interamericano de Assistência Recíproca."
+    },
+    "event_25": {
+      "date": "30/04/82",
+      "description": "A Argentina apresenta uma nota à ONU informando que faria uso do direito de legítima defesa se fosse atacada."
+    },
+    "event_26": {
+      "date": "30/04/82",
+      "description": "Acidentalmente, em Caleta Olivia, um helicóptero do Exército Argentino cai, resultando na morte de 10 militares."
+    },
+    "event_27": {
+      "date": "01/05/82",
+      "description": "Os britânicos iniciam os ataques aéreos sobre as Malvinas, danificando ligeiramente a pista do aeroporto da capital das ilhas."
+    },
+    "event_28": {
+      "date": "01/05/82",
+      "description": "Ocorrem os primeiros combates aeronavais, com a participação dos navios argentinos 'Forrest' e 'GC82 Ilhas Malvinas'. Um ataque aéreo é realizado sobre o 'ELMA Formosa', que é atingido por uma bomba que não chega a detonar."
+    },
+    "event_29": {
+      "date": "01/05/82",
+      "description": "O submarino argentino ARA San Luis entra em contato com unidades inimigas e lança um ataque com torpedos, sem conseguir avaliar o resultado."
+    },
+    "event_30": {
+      "date": "02/05/82",
+      "description": "O presidente do Peru, Belaunde Terry, apresenta uma proposta de paz ao presidente argentino, que é preliminarmente aprovada com algumas modificações."
+    },
+    "event_31": {
+      "date": "02/05/82",
+      "description": "O submarino nuclear britânico 'HMS Conqueror' torpedeia e afunda o cruzador argentino 'ARA Gral. Belgrano' fora da zona de exclusão marítima. Morrem 323 tripulantes. O destróier 'ARA Bouchard' recebe um impacto, que seria de um torpedo que não chegou a explodir."
+    },
+    "event_32": {
+      "date": "03/05/82",
+      "description": "O aviso 'ARA Alférez Sobral' estabelece combate com helicópteros ingleses, recebendo posteriormente impactos de mísseis que destroem sua ponte de comando. Na ação, morre seu comandante, o capitão Gómez Roca, junto com mais sete tripulantes."
+    },
+    "event_33": {
+      "date": "04/05/82",
+      "description": "Aviões navais argentinos, equipados com mísseis Exocet, atacam o destróier inglês 'HMS Sheffield', que posteriormente afunda. Morrem 20 marinheiros britânicos."
+    },
+    "event_34": {
+      "date": "06/05/82",
+      "description": "A ONU propõe um plano de paz baseado na cessação imediata das hostilidades, a retirada das tropas argentinas e da frota britânica, o início das negociações, a suspensão das sanções econômicas à Argentina e a administração da ONU nas ilhas do Atlântico Sul enquanto durarem as negociações. O plano não foi aceito pela Grã-Bretanha."
+    },
+    "event_35": {
+      "date": "07/05/82",
+      "description": "Londres amplia o bloqueio naval para apenas 12 milhas da costa marítima argentina. Buenos Aires denuncia à ONU e ao TIAR que o bloqueio é mais um ato de agressão do país europeu."
+    },
+    "event_36": {
+      "date": "09/05/82",
+      "description": "O pesqueiro argentino 'Narwal' é afundado pela aviação inglesa, morrendo o contramestre Rupp do navio mercante. Além disso, um helicóptero do Exército que foi resgatar os sobreviventes é derrubado, resultando na morte de seus 3 tripulantes."
+    },
+    "event_37": {
+      "date": "10/05/82",
+      "description": "A Grã-Bretanha decreta uma zona de exclusão aérea de 100 milhas náuticas ao redor da ilha de Ascensão."
+    },
+    "event_38": {
+      "date": "10/05/82",
+      "description": "A fragata britânica 'HMS Alacrity' afunda o 'ARA Isla de los Estados' no meio do estreito de San Carlos. Morrem o capitão Panigadi e mais 21 tripulantes."
+    },
+    "event_39": {
+      "date": "14/05/82",
+      "description": "Chegam a Buenos Aires os 189 argentinos capturados na ilha San Pedro (Georgias do Sul). Entre eles, os trabalhadores cuja presença no arquipélago gerou o confronto. Os aviões britânicos continuam atacando as ilhas."
+    },
+    "event_40": {
+      "date": "15/05/82",
+      "description": "Embarcações britânicas bombardearam o Aeródromo Calderón na ilha de Borbón, afetando dez aviões argentinos em terra."
+    },
+    "event_41": {
+      "date": "16/05/82",
+      "description": "Como consequência de sucessivos ataques aéreos britânicos, os navios argentinos 'ELMA Río Carcarañá' e 'ARA Bahía Buen Suceso' são colocados fora de combate."
+    },
+    "event_42": {
+      "date": "20/05/82",
+      "description": "Um helicóptero Sea King da Grã-Bretanha cai em Punta Arenas (Chile). Não foram encontrados vestígios ou restos dos tripulantes."
+    },
+    "event_43": {
+      "date": "20/05/82",
+      "description": "Javier Pérez de Cuellar, Secretário Geral da ONU, anuncia que suas gestões em favor da paz foram inúteis. O Governo do Peru apresenta uma proposta, que também fracassa."
+    },
+    "event_44": {
+      "date": "21/05/82",
+      "description": "Após sofrer danos significativos em 4 fragatas, o afundamento da fragata 'HMS Ardent', a perda de 3 aviões Harrier e 2 helicópteros, os britânicos conseguem estabelecer uma cabeça de ponte em Puerto San Carlos, enfrentando a oposição de 2 seções do RI 25. Os combates aeronavais foram extremamente violentos, com destaque para o valor dos aviadores argentinos, que perderam 12 aviões e 3 helicópteros."
+    },
+    "event_45": {
+      "date": "22/05/82",
+      "description": "O 'GC83 Río Iguazú' estabelece um combate aeronaval contra 3 aviões britânicos, perdendo um homem e derrubando um Harrier."
+    },
+    "event_46": {
+      "date": "23/05/82",
+      "description": "O 'Monsunen' é intensamente bombardeado pelas fragatas britânicas 'HMS Brilliant' e 'HMS Yarmouth', conseguindo evitar o cerco inimigo sem sofrer danos."
+    },
+    "event_47": {
+      "date": "24/05/82",
+      "description": "Após numerosos ataques aéreos, a fragata britânica 'HMS Antelope' acaba afundando nas águas do estreito de San Carlos."
+    },
+    "event_48": {
+      "date": "24/05/82",
+      "description": "O Mercado Comum Europeu decide manter as sanções econômicas contra a Argentina por tempo indeterminado, com exceção da Itália e da Irlanda, que não aderem à medida."
+    },
+    "event_49": {
+      "date": "25/05/82",
+      "description": "Aviões argentinos danificaram três fragatas mísseis e afundaram o destróier 'HMS Coventry' e o transporte pesado 'Atlantic Conveyor'."
+    },
+    "event_50": {
+      "date": "26/05/82",
+      "description": "O Conselho de Segurança das Nações Unidas aprova a Resolução 505; que pede ao Secretário-Geral que empreenda uma nova missão de bons ofícios, estabelecendo imediatamente contatos com as partes para negociar condições mutuamente aceitáveis para um cessar-fogo; e exorta as partes em conflito a cooperarem plenamente com o Secretário-Geral em sua missão."
+    },
+    "event_51": {
+      "date": "27/05/82 a 28/05/82",
+      "description": "As tropas inglesas, reforçadas por novos contingentes, avançam sobre Darwin e Pradera del Ganso. Nas ações, morre o tenente-coronel Jones das forças britânicas."
+    },
+    "event_52": {
+      "date": "28/05/82",
+      "description": "O papa João Paulo II faz um forte apelo por uma paz justa e honrosa durante sua visita a Londres. Por outro lado, durante uma Reunião do TIAR, foi aprovada uma resolução favorável à Argentina."
+    },
+    "event_53": {
+      "date": "29/05/82",
+      "description": "Após combates sangrentos, a guarnição argentina de Darwin deve se render."
+    },
+    "event_54": {
+      "date": "30/05/82",
+      "description": "A aviação argentina, após uma intensa operação, consegue danificar o porta-aviões 'HMS Invincible'. Londres nunca confirmou o fato."
+    },
+    "event_55": {
+      "date": "01/06/82",
+      "description": "Avançadas britânicas chegam ao monte Kent, a cerca de 20 quilômetros de Porto Argentino. Começam os confrontos de artilharia terrestre."
+    },
+    "event_56": {
+      "date": "01/06/82",
+      "description": "O avião Hércules TC-63 da F.A.A. é abatido por um Harrier, resultando na morte do vice-comodoro Meisner e outros 6 tripulantes."
+    },
+    "event_57": {
+      "date": "03/06/82",
+      "description": "Em Havana, o Chanceler Costa Méndez faz um discurso perante os representantes dos Não Alinhados."
+    },
+    "event_58": {
+      "date": "04/06/82",
+      "description": "Nas Nações Unidas, um novo projeto de cessar-fogo é vetado pelos EUA e pela Grã-Bretanha."
+    },
+    "event_59": {
+      "date": "07/06/82",
+      "description": "Um avião de exploração Lear-Jet argentino é abatido por um míssil Sea Dart, resultando na morte do vice-comodoro De la Colina e outros 4 tripulantes."
+    },
+    "event_60": {
+      "date": "08/06/82",
+      "description": "A Força Aérea Argentina rejeita uma tentativa de desembarque inglês em Hoya Chasco. O transporte de tropas 'RFA Sir Galahad' e uma barcaça de desembarque afundam; enquanto a fragata 'HMS Plymouth' e o transporte de tropas 'RFA Sir Tristam' ficam seriamente danificados."
+    },
+    "event_61": {
+      "date": "11/06/82",
+      "description": "O papa João Paulo II chega à Argentina para convocar uma reunião de oração pela paz, em meio a uma fervorosa manifestação de afeto."
+    },
+    "event_62": {
+      "date": "12/06/82",
+      "description": "O 'HMS Glamorgan' é posto fora de combate por um Exocet argentino lançado da costa. Na ação, morrem 13 tripulantes britânicos."
+    },
+    "event_63": {
+      "date": "12/06/82",
+      "description": "As tropas inglesas atacam os montes Two Sisters, Longdon e Harriet, em busca da batalha final por Porto Argentino. Um helicóptero inglês lança um míssil que atinge o telhado do Departamento de Inteligência do Exército em Porto Argentino."
+    },
+    "event_64": {
+      "date": "13/06/82",
+      "description": "Em um avanço difícil, as forças britânicas penetram as defesas argentinas, ocupando todas as elevações ao redor de Porto Argentino. Os ingleses tentam um desembarque na península Camber, que é rejeitado."
+    },
+    "event_65": {
+      "date": "13/06/82",
+      "description": "Aviões argentinos atacam o posto de comando do General Jeremy Moore; que resulta ileso."
+    },
+    "event_66": {
+      "date": "14/06/82",
+      "description": "Após duros combates, a guarnição argentina de Porto Argentino deve se render. Os generais Jeremy Moore e Mario Benjamín Menéndez, respectivamente comandante das forças britânicas e governador militar das Ilhas Malvinas, estabelecem o cessar-fogo e acordam as condições da rendição."
+    },
+    "event_67": {
+      "date": "14/06/82",
+      "description": "Em Buenos Aires, ao tomar conhecimento dos fatos, uma concentração é realizada à noite em rejeição à capitulação. Na manifestação ocorrem tumultos, que são reprimidos pela polícia."
+    },
+    "event_68": {
+      "date": "20/06/82",
+      "description": "Um grupo de forças britânicas realiza um ataque contra a base científica 'Corbeta Uruguay' na ilha Morrell (Sandwich do Sul), e desalojam à força os cientistas argentinos ali estabelecidos. Com este ato, termina a agressão colonial britânica e cessam as ações bélicas propriamente ditas."
+    },
+    "event_69": {
+      "date": "20/06/82",
+      "description": "A Grã-Bretanha declara formalmente o cessar das hostilidades."
     }
   }
+}
