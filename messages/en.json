@@ -1,0 +1,449 @@
+{
+  "Header": {
+    "title_aria": "Memories of Malvinas - Home",
+    "title": "Memories of",
+    "malvinas": "Malvinas",
+    "menu_aria": "Activate navigation",
+    "logo_alt": "Page logo - Memories of Malvinas",
+    "home": "Home",
+    "veterans": "Veterans",
+    "map": "Map",
+    "history": "History",
+    "resolutions": "Resolutions",
+    "about": "About Us",
+    "configuration": "Configuration"
+  },
+  "Footer": {
+    "title": "Memories of",
+    "malvinas": "Malvinas",
+    "logo_alt": "Page logo - Memories of Malvinas",
+    "first_section": "Quick Links",
+    "history": "History",
+    "veterans": "Veterans",
+    "map": "Map",
+    "second_section": "Contact"
+  },
+  "LocaleSwitcher": {
+    "es": "Spanish",
+    "en": "English",
+    "it": "Italian",
+    "pt": "Portuguese",
+    "fr": "French",
+    "label": "Language"
+  },
+  "ConfigurationPage": {
+    "title": "Configuration",
+    "shortcut_title": "Shortcuts",
+    "shortcut_subtitle": "Keyboard Shortcuts",
+    "search": "Search",
+    "text_size_reduce": "Reduce text size",
+    "text_size_increase": "Increase text size"
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "intro": "We are a group of students from the Faculty of Informatics at the National University of La Plata taking a course called User-Centered Design.",
+    "objetive": "Our goal is to create an accessible page to learn about the stories of the veterans who participated in the Malvinas war.",
+    "team_title": "Our team consists of:",
+    "contact": "Contact",
+    "contact_to": "If you have any questions or want to know more about the project, you can contact us at "
+  },
+  "MapComponent": {
+    "search_placeholder": "Search by name",
+    "search_aria": "Type the veteran's name here to facilitate the search",
+    "rank": "Rank:",
+    "rank_aria": "Military rank",
+    "status": "Status:",
+    "status_aria": "Status",
+    "deceased_on": "Deceased on",
+    "place_of_birth": "Place of birth:",
+    "place_of_birth_aria": "Place of birth",
+    "date_of_birth": "Date of birth:",
+    "date_of_birth_aria": "Date of birth"
+  },
+  "MapPage": {
+    "title": "Interactive map",
+    "description": "The map shows the geolocation corresponding to the place of death of each of the fallen soldiers during the Malvinas War.",
+    "usage_title": "How to use the map",
+    "usage_description_one": "By clicking on the location of one of the fallen, you can access a summary of the biographical sketch including surname and name, rank, place and date of birth.",
+    "usage_description_two": "It is also possible to search by first and/or last name to locate them quickly."
+  },
+  "HomePage": {
+    "text_one": "Discover the living memory of the Malvinas heroes. Explore this resource for a deeper understanding of a crucial historical event for Argentina.",
+    "image_one_alt": "Map presentation of the living memory of the Malvinas Heroes",
+    "title": "Veterans who fought in Malvinas",
+    "image_two_alt": "Representation logo of a veteran",
+    "images_title": "Photo gallery of Argentine soldiers",
+    "image_three_alt": "Argentine soldiers in a trench in Puerto Yapeyú",
+    "image_four_alt": "Argentine troops soldiers. Photo: Telam Archive",
+    "image_five_alt": "Camp of a patrol near the airport of the city Télam 162",
+    "conflict_title": "Introduction to the conflict",
+    "image_six_alt": "Representation logo of a veteran and the Argentine flag",
+    "conflict_description": "The armed conflict between Argentina and the United Kingdom over the Falkland Islands in 1982 resulted in the tragic loss of many lives. In our country, the Falklands War is considered a crucial event that marked a before and after in history, causing great social and political upheaval, and leaving a deep mark on national identity. The memory of the fallen soldiers in the war is of great importance to Argentines, being considered a symbol of the struggle for sovereignty and national dignity."
+  },
+  "VeteransPage": {
+    "title": "Stories of Valor in the Falklands",
+    "search_placeholder": "Search by name",
+    "search_aria": "Type the veteran's name here to facilitate the search",
+    "more_info_btn_aria": "More information about {name}",
+    "more_info_btn": "More information"
+  },
+  "VeteranHistoryPage": {
+    "loading": "Loading veteran data...",
+    "title": "Additional Information",
+    "see_more_btn": "See combatant's review",
+    "see_btn_btn_aria": "More information about {name}",
+    "rank": "Rank",
+    "document": "Document",
+    "grade": "Grade",
+    "post_mortem_grade": "Posthumous Grade",
+    "weapon": "Weapon",
+    "unit": "Unit",
+    "date_of_death": "Date of Death",
+    "place_of_death": "Place of Death",
+    "mother": "Mother",
+    "father": "Father",
+    "place_of_burial": "Place of Burial",
+    "grave": "Grave",
+    "date_of_birth": "Date of Birth",
+    "place_of_birth": "Place of Birth",
+    "combat_role": "Combat Role",
+    "date_of_enlistment": "Date of Enlistment",
+    "date_of_promotion": "Date of Promotion"
+  },
+  "ResolutionsPage": {
+    "title": "UN Resolutions",
+    "1960": {
+      "title": "1960",
+      "paragraph_one": "On December 14, 1960, the United Nations General Assembly adopted Resolution 1514 (XV) 'Declaration on the Granting of Independence to Colonial Countries and Peoples.'",
+      "paragraph_two": "This resolution marked a milestone in the decolonization process promoted by the United Nations, proclaiming the need to bring colonialism to a swift and unconditional end in all its forms and manifestations, and enshrining the two fundamental principles that should guide the decolonization process: self-determination and territorial integrity."
+    },
+    "1964": {
+      "title": "1964",
+      "paragraph_one": "In September 1964, during the debate of Subcommittee III of the Special Committee on Decolonization, Ambassador José María Ruda delivered his famous argument stating that there was no population in the islands that was oppressed, subjugated, or subjected to colonialism, one of the reasons why that population is not entitled to the right to self-determination claimed by the British side.",
+      "paragraph_two": "He therefore called for the application of the principle of territorial integrity, recognized in Resolution 1514 (XV) of the General Assembly, which had been violated by the British usurpation and occupation of that part of the Argentine national territory."
+    },
+    "1965": {
+      "title": "1965",
+      "paragraph_one": "On December 16, 1965, the General Assembly adopted Resolution 2065 (XX), the first exclusively referring to the Question of the Malvinas, which recognized the existence of a sovereignty dispute between Argentina and the United Kingdom and invited both countries to negotiate to find a peaceful solution to the controversy."
+    },
+    "1966_1982": {
+      "title": "1966-1982",
+      "paragraph_one": "A process of bilateral negotiations between Argentina and the United Kingdom began, extending until 1982. During this period, both countries analyzed several hypotheses for resolving the dispute but could not reach an agreement."
+    },
+    "1973": {
+      "title": "1973",
+      "paragraph_one": "General Assembly Resolution 3160 (XXVIII) recognized the continued efforts made by the Argentine government and declared the need to accelerate the negotiations provided for in Resolution 2065 (XX) to reach a peaceful solution to the sovereignty dispute between the two governments over the Malvinas Islands."
+    },
+    "1976": {
+      "title": "1976",
+      "paragraph_one": "In 1976, a situation of bilateral tension arose, fueled by various unilateral British actions in the dispute area. At the end of that year, the United Nations General Assembly, by a large majority and with the sole opposition of the United Kingdom, adopted Resolution 31/49, which once again recognized the continuous efforts of Argentina to facilitate the decolonization process and promote the well-being of the Islands' population, requested both governments to accelerate negotiations on the sovereignty dispute, as requested in Resolutions 2065 (XX) and 3160 (XXVIII), and urged both parties to refrain from adopting decisions that would entail the introduction of unilateral modifications in the situation while the Islands were going through the process recommended in the aforementioned resolutions."
+    },
+    "1982": {
+      "title": "1982",
+      "paragraph_one": "In November 1982, the General Assembly adopted Resolution 37/9, which called on both governments to resume negotiations to find a peaceful solution to the sovereignty dispute. This was reiterated in subsequent Assembly resolutions on the Question.",
+      "paragraph_two": "Between 1982 and 1988, the General Assembly adopted another 7 resolutions on the question of the Malvinas Islands, reaffirming the existence of the sovereignty dispute between Argentina and the United Kingdom and calling on both parties to resume negotiations.",
+      "paragraph_three": "None of these resolutions, nor those subsequently adopted by the Special Committee on Decolonization, mentioned the principle of self-determination. Moreover, in 1985 the General Assembly rejected the two amendments submitted by the United Kingdom to include references to this principle in the draft resolution."
+    },
+    "1989": {
+      "title": "1989",
+      "paragraph_one": "Since 1989, the annual examination of the Question of the Malvinas Islands has taken place primarily within the framework of the Special Committee on Decolonization (C24), currently composed of 29 Member States. Thus, in June each year, the C24 adopts by consensus a draft resolution reaffirming the validity of the resolutions adopted by the General Assembly, reiterating that the way to end the special and particular colonial situation regarding the question of the Malvinas Islands is through a peaceful and negotiated solution to the sovereignty dispute between Argentina and the United Kingdom, requesting both governments to resume sovereignty negotiations, and reiterating its support for the Secretary-General's good offices mission."
+    },
+    "special_committee": {
+      "title": "Special Political and Decolonization Committee (Fourth Committee)",
+      "paragraph_one": "The Malvinas Question is also addressed annually in the general debate on Decolonization issues held by the Special Political and Decolonization Committee (Fourth Committee) of the General Assembly. In this context, Argentina and other delegations (mainly from Latin America) make interventions in a national capacity and on behalf of groups of countries such as CELAC and MERCOSUR, expressing their support for our country's sovereignty rights and calling on the United Kingdom to end the colonial occupation through the resumption of negotiations."
+    },
+    "2023": {
+      "title": "2023 - International Support",
+      "paragraph_one": "The United Nations Special Committee on Decolonization (C-24) adopted by consensus a new resolution reiterating, as every year since 1983, the call on the United Kingdom and Argentina to resume negotiations to find, as soon as possible, a peaceful and definitive solution to the sovereignty dispute over the Malvinas Islands, South Georgia Islands, South Sandwich Islands, and the surrounding maritime areas.",
+      "paragraph_two": "The adopted resolution was co-sponsored by all the Latin American countries in the Special Committee: Chile, Bolivia, Cuba, Ecuador, Nicaragua, and Venezuela. Furthermore, during the session, support for the resumption of sovereignty negotiations was also voiced by the delegations of China, Indonesia, Syria, Russia, Antigua and Barbuda, Timor-Leste, and Saint Vincent and the Grenadines, members of the C-24.",
+      "paragraph_three": "Additionally, numerous statements in support of Argentina's rights were heard from countries in the region, including interventions on behalf of the Community of Latin American and Caribbean States (CELAC) and the MERCOSUR Member and Associated States, made by Saint Vincent and the Grenadines and Uruguay, respectively; while other countries in the region spoke in a national capacity."
+    }
+  },
+  "EventsPage": {
+    "title": "History of the Falklands War",
+    "title_paragraph": "The Falkland Islands are located in the Argentine Sea about 600 km from the Patagonian coast.",
+    "second_title": "Background",
+    "second_title_paragraph_one": "From 1765, the islands were occupied by the Spanish authorities of the Viceroyalty of the Río de la Plata, following some diplomatic and military events between France, Spain, and Great Britain. In the 1820s, Argentine authorities based in Buenos Aires took possession of the islands using the same principle that constituted the Argentine Nation, even appointing Luis Vernet as Governor of the islands on June 10, 1829.",
+    "second_title_paragraph_two": "On January 3, 1833, the Falkland Islands were seized by the British corvette Clio, which expelled the Argentine authorities in place. This situation lasted until April 2, 1982, when Operation Rosario began, that is, the recovery of the islands by Argentine military forces, marking the start of the 1982 Falklands Conflict. The national flag flew until June 14, 1982, when the islands were once again seized by the British Empire.",
+    "third_title": "Timeline",
+    "no_events_to_show": "No events to display."
+  },
+  "Events": {
+    "event_1": {
+      "date": "02/04/82",
+      "description": "After an escalation of tense situations in the Georgias between Argentina and Great Britain, Argentine forces land in the capital of the Falklands and, without causing casualties to the small British detachment or the Falkland Islanders, restore Argentine sovereignty over the islands. Captain Giachino of the Argentine naval forces dies in the actions."
+    },
+    "event_2": {
+      "date": "02/04/82",
+      "description": "The Malvinas Naval Outpost is created, and the English soldiers and the Colonial Governor leave for Montevideo. In Plaza de Mayo in Buenos Aires, a massive rally is held in support of the recovery of the Falklands."
+    },
+    "event_3": {
+      "date": "03/04/82",
+      "description": "Argentine troops recover sovereignty over the South Georgia islands without causing casualties to the British. During the operations, three Argentine sailors die."
+    },
+    "event_4": {
+      "date": "03/04/82",
+      "description": "The United Nations Security Council approves Resolution 502, which demands the immediate cessation of hostilities, the immediate withdrawal of all Argentine forces from the islands, and urges the governments of Argentina and Great Britain to seek a diplomatic solution to their differences and to fully respect the purposes and principles of the United Nations Charter."
+    },
+    "event_5": {
+      "date": "03/04/82",
+      "description": "The United States authorizes Great Britain to use Ascension Island as a logistics base."
+    },
+    "event_6": {
+      "date": "05/04/82",
+      "description": "The British Foreign Secretary, Lord Carrington, resigns; and the British Task Force sets sail from Portsmouth."
+    },
+    "event_7": {
+      "date": "06/04/82",
+      "description": "General Alexander Haig, appointed by the U.S. President to mediate the conflict, meets in Washington with the Argentine Foreign Minister, Nicanor Costa Méndez."
+    },
+    "event_8": {
+      "date": "07/04/82",
+      "description": "Brigadier General Mario Benjamín Menéndez assumes the role of military governor of the archipelago."
+    },
+    "event_9": {
+      "date": "07/04/82",
+      "description": "Great Britain establishes a maritime exclusion zone from April 12, covering a circle centered at 51° 40' S - 59° 30' W, and with a radius of 200 nautical miles."
+    },
+    "event_10": {
+      "date": "07/04/82",
+      "description": "The Argentine Government calls up its reserves and creates the South Atlantic Theater of Operations (TOAS), appointing Vice Admiral Juan José Lombardo as its commander."
+    },
+    "event_11": {
+      "date": "08/04/82",
+      "description": "In London, Haig meets with British Prime Minister Margaret Thatcher, who remains unyielding."
+    },
+    "event_12": {
+      "date": "09/04/82",
+      "description": "The European Economic Community approves economic sanctions against Argentina."
+    },
+    "event_13": {
+      "date": "10/04/82",
+      "description": "Argentine President, Lieutenant General Leopoldo F. Galtieri, meets with Haig in Buenos Aires; meanwhile, a massive rally in support of the recovery of the Falklands takes place in Plaza de Mayo."
+    },
+    "event_14": {
+      "date": "11/04/82",
+      "description": "Pope John Paul II urges both countries to abandon extreme positions."
+    },
+    "event_15": {
+      "date": "12/04/82",
+      "description": "Haig arrives in London to continue peace negotiations."
+    },
+    "event_16": {
+      "date": "14/04/82",
+      "description": "Haig's efforts continue in Buenos Aires."
+    },
+    "event_17": {
+      "date": "19/04/82",
+      "description": "Costa Méndez announces the request for the application of the Inter-American Treaty of Reciprocal Assistance (TIAR) to the Organization of American States (OAS). Haig returns to the United States without achieving results."
+    },
+    "event_18": {
+      "date": "20/04/82",
+      "description": "Argentina secures the convocation for the XX Consultation Meeting of Foreign Ministers of the 21 signatory nations of the Rio Treaty."
+    },
+    "event_19": {
+      "date": "21/04/82",
+      "description": "An Argentine Boeing 707 aircraft spots the British Task Force at 19° 20' West, heading southwest, being intercepted by a British fighter aircraft."
+    },
+    "event_20": {
+      "date": "22/04/82",
+      "description": "A British landing attempt on South Georgia Island fails."
+    },
+    "event_21": {
+      "date": "23/04/82",
+      "description": "Argentina reports to the OAS that three British ship echoes have been detected about 50 miles north of Grytviken, on South Georgia Island."
+    },
+    "event_22": {
+      "date": "24/04/82",
+      "description": "The Argentine Air Force detects the Task Force at latitude 35° 15' South, longitude 27° 55' West, heading 204 and speed 13 knots."
+    },
+    "event_23": {
+      "date": "25/04/82 to 26/04/82",
+      "description": "The British attack the small Argentine garrison on South Georgia Island, disable the submarine 'ARA Santa Fe' and occupy South Georgia. In a confused episode, an Argentine Navy non-commissioned officer is killed."
+    },
+    "event_24": {
+      "date": "30/04/82",
+      "description": "Haig announces the definitive failure of the negotiations and the President of the United States, Ronald Reagan, formally declares his support for Great Britain, followed by the imposition of a military and economic embargo on Argentina; disregarding the Inter-American Treaty of Reciprocal Assistance."
+    },
+    "event_25": {
+      "date": "30/04/82",
+      "description": "Argentina submits a note to the UN, informing that it would exercise the right of legitimate defense if attacked."
+    },
+    "event_26": {
+      "date": "30/04/82",
+      "description": "Accidentally, in Caleta Olivia, an Argentine Army helicopter crashes, killing 10 soldiers."
+    },
+    "event_27": {
+      "date": "01/05/82",
+      "description": "The British begin air attacks on the Falklands, slightly damaging the runway of the capital's airport."
+    },
+    "event_28": {
+      "date": "01/05/82",
+      "description": "The first naval-air battles take place, involving the Argentine ships 'Forrest' and 'GC82 Islas Malvinas'. An air attack on the 'ELMA Formosa' occurs, with the ship being hit by a bomb that fails to detonate."
+    },
+    "event_29": {
+      "date": "01/05/82",
+      "description": "The Argentine submarine ARA San Luis makes contact with enemy units and launches a torpedo attack, without being able to assess the result."
+    },
+    "event_30": {
+      "date": "02/05/82",
+      "description": "The President of Peru, Belaunde Terry, presents a peace proposal to the Argentine president, which is preliminarily approved with some modifications."
+    },
+    "event_31": {
+      "date": "02/05/82",
+      "description": "The British nuclear submarine 'HMS Conqueror' torpedoes and sinks the Argentine cruiser 'ARA Gral. Belgrano' outside the maritime exclusion zone. 323 crew members perish. The destroyer 'ARA Bouchard' is hit, possibly by a torpedo that fails to explode."
+    },
+    "event_32": {
+      "date": "03/05/82",
+      "description": "The 'ARA Alférez Sobral' engages in combat with British helicopters, later receiving missile hits that destroy its bridge. In the action, its commander, Captain Gómez Roca, along with seven other crew members, die."
+    },
+    "event_33": {
+      "date": "04/05/82",
+      "description": "Argentine naval aircraft, equipped with Exocet missiles, attack the British destroyer 'HMS Sheffield', which subsequently sinks. 20 British sailors perish."
+    },
+    "event_34": {
+      "date": "06/05/82",
+      "description": "The UN proposes a peace plan based on the immediate cessation of hostilities, the withdrawal of Argentine troops and the British fleet, the start of negotiations, the suspension of economic sanctions against Argentina, and UN administration of the South Atlantic islands during negotiations. It was not accepted by Great Britain."
+    },
+    "event_35": {
+      "date": "07/05/82",
+      "description": "London extends the naval blockade to just 12 miles off the Argentine coast. Buenos Aires denounces to the UN and the TIAR that this blockade is another act of aggression by the European country."
+    },
+    "event_36": {
+      "date": "09/05/82",
+      "description": "The Argentine fishing vessel 'Narwal' is sunk by British aviation, killing the ship's boatswain Rupp. Additionally, an Army helicopter that went to rescue survivors is shot down, with its 3 crew members perishing."
+    },
+    "event_37": {
+      "date": "10/05/82",
+      "description": "Great Britain declares a 100-nautical-mile air exclusion zone around Ascension Island."
+    },
+    "event_38": {
+      "date": "10/05/82",
+      "description": "The British frigate 'HMS Alacrity' sinks the 'ARA Isla de los Estados' in the middle of the San Carlos Strait. Captain Panigadi and 21 other crew members perish."
+    },
+    "event_39": {
+      "date": "14/05/82",
+      "description": "The 189 Argentinians captured on San Pedro Island (South Georgia) arrive in Buenos Aires. Among them are the workers whose presence on the archipelago sparked the confrontation. British aircraft persist in their attacks on the islands."
+    },
+    "event_40": {
+      "date": "15/05/82",
+      "description": "British ships shell the Calderón Airfield on Borbón Island, affecting ten Argentine aircraft on the ground."
+    },
+    "event_41": {
+      "date": "16/05/82",
+      "description": "As a result of successive British air attacks, the Argentine ships 'ELMA Río Carcarañá' and 'ARA Bahía Buen Suceso' are put out of action."
+    },
+    "event_42": {
+      "date": "20/05/82",
+      "description": "A British Sea King helicopter crashes in Punta Arenas (Chile). No traces or remains of the crew were found."
+    },
+    "event_43": {
+      "date": "20/05/82",
+      "description": "Javier Pérez de Cuellar, UN Secretary-General, announces that his efforts for peace have been futile. The Peruvian Government presents a proposal, which also fails."
+    },
+    "event_44": {
+      "date": "21/05/82",
+      "description": "After suffering significant damage to 4 frigates, the sinking of the frigate 'HMS Ardent', losing 3 Harrier aircraft and 2 helicopters, the British manage to establish a beachhead at Port San Carlos, despite opposition from 2 sections of the RI 25. The naval-air battles were intense, with Argentine aviators showing great bravery, though 12 aircraft and 3 helicopters were lost."
+    },
+    "event_45": {
+      "date": "22/05/82",
+      "description": "The 'GC83 Río Iguazú' engages in naval-air combat with 3 British aircraft, losing one man and shooting down a Harrier."
+    },
+    "event_46": {
+      "date": "23/05/82",
+      "description": "The 'Monsunen' is heavily shelled by the British frigates 'HMS Brilliant' and 'HMS Yarmouth', managing to evade the enemy's siege unharmed."
+    },
+    "event_47": {
+      "date": "24/05/82",
+      "description": "After numerous air attacks, the British frigate 'HMS Antelope' ends up sinking in the waters of the San Carlos Strait."
+    },
+    "event_48": {
+      "date": "24/05/82",
+      "description": "The European Economic Community decides to maintain economic sanctions against Argentina indefinitely, with the exception of Italy and Ireland, which do not adhere to the measure."
+    },
+    "event_49": {
+      "date": "25/05/82",
+      "description": "Argentine aircraft damaged three missile frigates and sank the destroyer 'HMS Coventry' and the heavy transport 'Atlantic Conveyor'."
+    },
+    "event_50": {
+      "date": "26/05/82",
+      "description": "The United Nations Security Council approves Resolution 505, which calls on the Secretary-General to undertake a renewed good offices mission, immediately establishing contacts with the parties to negotiate mutually acceptable conditions for a ceasefire, and urges the conflicting parties to fully cooperate with the Secretary-General in his mission."
+    },
+    "event_51": {
+      "date": "27/05/82 to 28/05/82",
+      "description": "British troops, reinforced by new contingents, advance on Darwin and Goose Green. In the actions, Lieutenant Colonel Jones of the British forces dies."
+    },
+    "event_52": {
+      "date": "28/05/82",
+      "description": "Pope John Paul II makes an impassioned appeal for a just and honorable peace during his visit to London. Additionally, during a TIAR Meeting, a resolution favorable to Argentina is approved."
+    },
+    "event_53": {
+      "date": "29/05/82",
+      "description": "After bloody battles, the Argentine garrison at Darwin must surrender."
+    },
+    "event_54": {
+      "date": "30/05/82",
+      "description": "After an intense operation, Argentine aviation manages to damage the aircraft carrier 'HMS Invincible'. London never confirmed the fact."
+    },
+    "event_55": {
+      "date": "01/06/82",
+      "description": "British advanced units reach Mount Kent, about 20 kilometers from Port Stanley. The ground artillery duels begin."
+    },
+    "event_56": {
+      "date": "01/06/82",
+      "description": "The Argentine Air Force's Hercules TC-63 is shot down by a Harrier, killing Vice-Commodore Meisner and 6 other crew members."
+    },
+    "event_57": {
+      "date": "03/06/82",
+      "description": "In Havana, Foreign Minister Costa Méndez delivers a speech to representatives of the Non-Aligned Movement."
+    },
+    "event_58": {
+      "date": "04/06/82",
+      "description": "At the United Nations, a new ceasefire proposal is vetoed by the USA and Great Britain."
+    },
+    "event_59": {
+      "date": "07/06/82",
+      "description": "An Argentine reconnaissance Lear-Jet is shot down by a Sea Dart missile, killing Vice-Commodore De la Colina and 4 other crew members."
+    },
+    "event_60": {
+      "date": "08/06/82",
+      "description": "The Argentine Air Force repels a British landing attempt at Chasco Hollow. The troop transport 'RFA Sir Galahad' and a landing craft are sunk, while the frigate 'HMS Plymouth' and the troop transport 'RFA Sir Tristam' are seriously damaged."
+    },
+    "event_61": {
+      "date": "11/06/82",
+      "description": "Pope John Paul II arrives in Argentina, calling for a prayer meeting for peace, amidst a fervent display of affection."
+    },
+    "event_62": {
+      "date": "12/06/82",
+      "description": "The 'HMS Glamorgan' is put out of action by an Argentine Exocet launched from the coast. In the action, 13 British crew members perish."
+    },
+    "event_63": {
+      "date": "12/06/82",
+      "description": "British troops attack Two Sisters, Longdon, and Harriet hills, seeking the final battle for Port Stanley. A British helicopter fires a missile that hits the roof of the Army Intelligence Department in Port Stanley."
+    },
+    "event_64": {
+      "date": "13/06/82",
+      "description": "In a difficult advance, British forces penetrate the Argentine defenses, occupying all the heights surrounding Port Stanley. The British attempt a landing on Camber Peninsula, which is repelled."
+    },
+    "event_65": {
+      "date": "13/06/82",
+      "description": "Argentine aircraft attack General Jeremy Moore's command post; he escapes unscathed."
+    },
+    "event_66": {
+      "date": "14/06/82",
+      "description": "After fierce battles, the Argentine garrison at Port Stanley must surrender. Generals Jeremy Moore and Mario Benjamín Menéndez, respectively the commander of British forces and the military governor of the Falkland Islands, establish a ceasefire and agree on the terms of the surrender."
+    },
+    "event_67": {
+      "date": "14/06/82",
+      "description": "In Buenos Aires, upon learning of the events, a demonstration against the surrender takes place at night. Disorder breaks out during the protest, which is suppressed by the police."
+    },
+    "event_68": {
+      "date": "20/06/82",
+      "description": "A group of British forces attacks the scientific base 'Corbeta Uruguay' on Morrell Island (South Sandwich Islands), forcibly evicting the Argentine scientists stationed there. With this act, British colonial aggression ends, and the actual hostilities cease."
+    },
+    "event_69": {
+      "date": "20/06/82",
+      "description": "Great Britain formally declares the cessation of hostilities."
+    }
+  }
+}

@@ -4,6 +4,8 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { getLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,20 +15,26 @@ export const metadata: Metadata = {
   description: "DEU 2024 - Grupo X",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="es">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
