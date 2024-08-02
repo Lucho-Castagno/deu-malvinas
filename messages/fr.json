@@ -91,7 +91,7 @@
     "loading": "Chargement des données du vétéran...",
     "title": "Informations supplémentaires",
     "see_more_btn": "Voir la critique du combattant",
-    "see_btn_btn_aria": "Plus d'informations sur {name}",
+    "see_more_btn_aria": "Plus d'informations sur {name}",
     "rank": "Rang",
     "document": "Document",
     "grade": "Grade",

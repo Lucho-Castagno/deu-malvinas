@@ -124,7 +124,7 @@ export default function HistoriaVeterano() {
                   <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
                     <button
                       className="btn btn-success"
-                      aria-label={t("see_more_btn_aria")}
+                      aria-label={t("see_more_btn_aria", { name: Nombre })}
                     >
                       {t("see_more_btn")}
                     </button>
