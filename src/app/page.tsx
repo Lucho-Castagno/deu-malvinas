@@ -10,7 +10,7 @@ export default function Home() {
       <section className={`container-fluid ${styles.topSection}`}>
         <div className="row">
           <div className="col-md-6 d-flex align-items-center">
-            <p className="text-md-start text-center">{t("text_one")}</p>
+            <p className="text-md-start text-center">{t("text_one")}<br />{t("text_two")}</p>
           </div>
           <div className="col-md-6">
             <Image
