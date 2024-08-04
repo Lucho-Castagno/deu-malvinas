@@ -32,6 +32,15 @@ export default function AboutPage() {
           </a>
         </p>
       </section>
+      <section aria-labelledby="comments">
+        <h2 id="comments" className="titulo">
+        {t('comments')}
+        </h2>
+        <p>
+        {t('leave_comment')}
+         
+        </p>
+      </section>
     </div>
   );
 }
