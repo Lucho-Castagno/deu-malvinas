@@ -65,7 +65,7 @@ export default function PersonalizacionPage() {
             </div>
             <div className="row mb-3">
               <div className="col-8">
-                <h3>{t('text_size_reduce')}</h3>
+                <h3>{t('text_size_increase')}</h3>
               </div>
               <div className="col-2">
                 <div
@@ -86,7 +86,7 @@ export default function PersonalizacionPage() {
             </div>
             <div className="row mb-3">
               <div className="col-8">
-                <h3>{t('text_size_increase')}</h3>
+                <h3>{t('text_size_reduce')}</h3>
               </div>
               <div className="col-2">
                 <div
