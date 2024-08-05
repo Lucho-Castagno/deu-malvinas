@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import "../globals.css";
+import CommentsSection from "./CommentsSection";
 
 export default function AboutPage() {
   const t = useTranslations("AboutPage");
@@ -40,6 +41,7 @@ export default function AboutPage() {
         {t('leave_comment')}
          
         </p>
+        <CommentsSection />
       </section>
     </div>
   );
