@@ -33,7 +33,10 @@ export default function AboutPage() {
           </a>
         </p>
       </section>
+
       <section aria-labelledby="comments">
+        <div className="comments-container">
+          
         <h2 id="comments" className="titulo">
         {t('comments')}
         </h2>
@@ -42,6 +45,7 @@ export default function AboutPage() {
          
         </p>
         <CommentsSection />
+        </div>
       </section>
     </div>
   );

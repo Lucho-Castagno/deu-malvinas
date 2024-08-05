@@ -41,17 +41,21 @@ form div {
 label {
   display: block;
   margin-bottom: 5px;
+  
 }
 
 input, textarea {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
+  border-color:#006769;
+  border-radius: 4px ;
+  border-width: 1px;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #006769;
+  background-color: #40A578;
   color: white;
   border: none;
   cursor: pointer;
@@ -59,7 +63,7 @@ button {
 }
 
 button:hover {
-  background-color: #028183;
+  background-color: #218156;
 }
 
 .comments {
@@ -71,4 +75,11 @@ button:hover {
   padding: 10px;
   border: 1px solid #ddd;
   background-color: #f9f9f9;
+}
+.comments-container {
+  border: 1px solid rgba(0, 103, 105, 0.2); 
+  padding: 20px; 
+  border-radius: 8px; 
+  background-color: #ffffff; 
+  margin-top: 20px; 
 }

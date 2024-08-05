@@ -18,7 +18,7 @@ const CommentsSection = () => {
   };
 
   return (
-    <div aria-labelledby="comments-section">
+    <div aria-labelledby="comments-section" >
       <form onSubmit={handleSubmit} aria-labelledby="comment-form">
         <div>
           <label htmlFor="name">Nombre:</label>
@@ -54,8 +54,9 @@ const CommentsSection = () => {
         </div>
         <button type="submit">Enviar</button>
       </form>
+      <br></br>
       <div aria-live="polite">
-        <h2 id="comments-section">Comentarios Recientes</h2>
+        <h2 id="comments-section" className="titulo">Comentarios Recientes</h2>
         {comments.map((comment, index) => (
           <div key={index} tabIndex="0" role="region" aria-labelledby={`comment-${index}`}>
             <p id={`comment-${index}`}>
