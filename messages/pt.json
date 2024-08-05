@@ -45,7 +45,14 @@
     "objetive": "Nosso objetivo é criar uma página acessível para conhecer as histórias dos veteranos que participaram da guerra das Malvinas.",
     "team_title": "Nossa equipe é composta por:",
     "contact": "Contato",
-    "contact_to": "Se você tiver dúvidas ou quiser saber mais sobre o projeto, pode nos contatar em "
+    "contact_to": "Se você tiver dúvidas ou quiser saber mais sobre o projeto, pode nos contatar em ",
+    "comments":"Comentários",
+    "leave_comment":"Compartilhe suas opiniões sobre nossa página e os heróis das Malvinas. Sua mensagem é muito valiosa para nós!",
+    "leave_name":"Nome:",
+    "leave_email":"E-mail:",
+    "leave_comments":"Comente:",
+    "leave_recentscomments":"Comentários Recentes",
+    "send":"Enviar"
   },
   "MapComponent": {
     "search_placeholder": "Buscar por nome",

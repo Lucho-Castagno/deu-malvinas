@@ -45,7 +45,14 @@
     "objetive": "Notre objectif est de créer une page accessible pour découvrir les histoires des vétérans qui ont participé à la guerre des Malouines.",
     "team_title": "Notre équipe est composée de:",
     "contact": "Contact",
-    "contact_to": "Si vous avez des questions ou souhaitez en savoir plus sur le projet, vous pouvez nous contacter à "
+    "contact_to": "Si vous avez des questions ou souhaitez en savoir plus sur le projet, vous pouvez nous contacter à ",
+    "comments":"Commentaires",
+    "leave_comment":"Partagez vos avis sur notre page et les héros des Malouines. Votre message nous est très précieux!",
+    "leave_name":"Nom:",
+    "leave_email":"E-mail:",
+    "leave_comments":"Commentaire:",
+    "leave_recentscomments":"Commentaires récents",
+    "send":"Envoyer"
   },
   "MapComponent": {
     "search_placeholder": "Rechercher par nom",

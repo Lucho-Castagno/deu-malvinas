@@ -44,6 +44,7 @@ export default function AboutPage() {
         {t('leave_comment')}
          
         </p>
+        
         <CommentsSection />
         </div>
       </section>
