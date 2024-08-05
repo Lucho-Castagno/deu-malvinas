@@ -69,7 +69,7 @@
   },
   "MapPage": {
     "title": "Mapa interactivo",
-    "description": "En el mapa se presenta la geolocalización correspodiente al lugar de falecimiento de cada uno de los combatientes caídos durante la Guerra de Malvinas.",
+    "description": "En el mapa se presenta la geolocalización correspodiente al lugar de fallecimiento de cada uno de los combatientes caídos durante la Guerra de Malvinas.",
     "usage_title": "Forma de usar el mapa",
     "usage_description_one": "Al hacer click en la ubicación de alguno de los caídos, se puede acceder a un resumen de la reseña biográfica que incluye apellido y nombre, rango, lugar y fecha de nacimiento.",
     "usage_description_two": "También es posible buscar por el nombre y/o apellido para ubicarlos rápidamente."
