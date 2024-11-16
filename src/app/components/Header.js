@@ -43,37 +43,37 @@ export default function Header() {
             <ul className="navbar-nav ms-auto">
             <li className="nav-item">
                 <Link href="/" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title={t('home')}>{t('home')}</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title={t('home_title')}>{t('home')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/veteranos" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title={t('veterans')}>{t('veterans')}</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title={t('veterans_title')}>{t('veterans')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/mapa" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title={t('map')}>{t('map')}</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title={t('map_title')}>{t('map')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/historia" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title={t('history')}>{t('history')}</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title={t('history_title')}>{t('history')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/resoluciones" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title={t('resolutions')}>{t('resolutions')}</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title={t('resolutions_title')}>{t('resolutions')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/nosotros" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title={t('about')}>{t('about')}</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title={t('about_title')}>{t('about')}</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/configuracion" legacyBehavior>
-                  <a className={`nav-link ${styles.customNavLink}`} title={t('configuration')}>{t('configuration')}</a>
+                  <a className={`nav-link ${styles.customNavLink}`} title={t('configuration_title')}>{t('configuration')}</a>
                 </Link>
               </li>
             </ul>
