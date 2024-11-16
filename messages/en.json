@@ -6,12 +6,19 @@
     "menu_aria": "Activate navigation",
     "logo_alt": "Page logo - Memories of Malvinas",
     "home": "Home",
+    "home_title": "Go to the home page",
     "veterans": "Veterans",
+    "veterans_title": "View and search for the soldiers who participated in the conflict",
     "map": "Map",
+    "map_title": "View the map of the Falklands",
     "history": "History",
+    "history_title": "See the history of the conflict",
     "resolutions": "Resolutions",
+    "resolutions_title": "Learn about the resolutions",
     "about": "About Us",
-    "configuration": "Configuration"
+    "about_title": "About us",
+    "configuration": "Settings",
+    "configurations_title": "Page settings (languages)"
   },
   "Footer": {
     "title": "Memories of",

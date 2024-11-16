@@ -6,12 +6,19 @@
     "menu_aria": "Activar navegación",
     "logo_alt": "Logo de pagina - Memorias de Malvinas",
     "home": "Inicio",
+    "home_title": "Ir al inicio de la pagina",
     "veterans": "Veteranos",
+    "veterans_title": "Ver y buscar a los soldados que participaron del conflicto",
     "map": "Mapa",
+    "map_title": "Visualizar mapa de Las Malvinas",
     "history": "Historia",
+    "history_title": "Ver la historia del conflicto",
     "resolutions": "Resoluciones",
+    "resolutions_title": "Informarse sobre las resoluciones",
     "about": "Nosotros",
-    "configuration": "Configuración"
+    "about_title": "Sobre nosotros",
+    "configuration": "Configuración",
+    "configurations_title": "Configuracion de la pagina (idiomas)"
   },
   "Footer": {
     "title": "Memorias de",

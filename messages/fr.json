@@ -6,12 +6,19 @@
     "menu_aria": "Activer la navigation",
     "logo_alt": "Logo de la page - Mémoires des Malouines",
     "home": "Accueil",
+    "home_title": "Aller à la page d'accueil",
     "veterans": "Vétérans",
+    "veterans_title": "Voir et rechercher les soldats qui ont participé au conflit",
     "map": "Carte",
+    "map_title": "Visualiser la carte des Malouines",
     "history": "Histoire",
+    "history_title": "Voir l'histoire du conflit",
     "resolutions": "Résolutions",
+    "resolutions_title": "S'informer sur les résolutions",
     "about": "À Propos",
-    "configuration": "Configuration"
+    "about_title": "À propos de nous",
+    "configuration": "Paramètres",
+    "configurations_title": "Paramètres de la page (langues)"
   },
   "Footer": {
     "title": "Mémoires de",

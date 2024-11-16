@@ -22,7 +22,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="col-md-2 mb-4 mb-md-0">
-            <p className={`${styles.customP}`}>{t('first_section')}</p>
+            <h1 className={`${styles.customP}`}>{t('first_section')}</h1>
             <ul className="list-unstyled">
               <li><Link href="/historia" legacyBehavior><a className={`${styles.customLink}`}>{t('history')}</a></Link></li>
               <li><Link href="/veteranos" legacyBehavior><a className={`${styles.customLink}`}>{t('veterans')}</a></Link></li>
@@ -30,7 +30,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-md-2 mb-4 mb-md-0">
-            <p className={`${styles.customP}`}>{t('second_section')}:</p>
+            <h1 className={`${styles.customP}`}>{t('second_section')}:</h1>
             <p><a href="mailto:historias.de.malvinas.argentinas@gmail.com" className={`${styles.customLink}`}>historias.de.malvinas.argentinas@gmail.com</a></p>
           </div>
         </div>
