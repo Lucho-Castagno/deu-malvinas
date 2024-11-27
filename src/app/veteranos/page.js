@@ -102,7 +102,7 @@ export default function VeteranosPage() {
                         </div>
                       </div>
                       <div className="card-body">
-                        <h5 className="card-title">{props.Nombre}</h5>
+                        <h2 className="card-title fs-5">{props.Nombre}</h2>
                         <p className="card-text">{props.Escalafon}</p>
                         <button
                           className="btn btn-success"

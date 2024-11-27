@@ -121,7 +121,7 @@ export default function HistoriaVeterano() {
                 />
               </div>
               <div>
-                <h5 className="card-title mb-0">{Nombre}</h5>
+                <h2 className="card-title mb-0 fs-5">{Nombre}</h2>
                 {renderField(t("rank"), Escalafon)}
                 {renderField(t("document"), DNI)}
                 {pdfUrl && (
