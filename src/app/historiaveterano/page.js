@@ -118,6 +118,7 @@ export default function HistoriaVeterano() {
                   alt={Nombre}
                   width={128}
                   height={128}
+                  role="presentation"
                 />
               </div>
               <div>
