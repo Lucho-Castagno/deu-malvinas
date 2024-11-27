@@ -10,28 +10,27 @@ export default function MapaPage() {
   const Map = useMemo(
     () =>
       dynamic(() => import("../components/Map"), {
-        loading: () => <p>A map is loading</p>,
+        loading: () => (
+          <p role="status" aria-live="polite">
+            {t("map_loading")}
+          </p>
+        ),
+        onError: () => <p role="alert">{t("map_error")}</p>,
         ssr: false,
       }),
-    []
+    [t]
   );
 
   return (
     <main role="main" className="main">
-      <h1 className={`text-center subtitle my-5`}>{t('title')}</h1>
-      <section className={"container-md"}>
-        <p>
-        {t('description')}
-        </p>
-        <h2 className="titulo">{t('usage_title')}</h2>
-        <p>
-        {t('usage_description_one')}
-        </p>
-        <p>
-        {t('usage_description_two')}
-        </p>
+      <section className={"container-md"} aria-labelledby="map-section-title">
+        <h1 id="map-section-title" className={`text-center subtitle my-5`}>{t("title")}</h1>
+        <p>{t("description")}</p>
+        <h2 className="titulo">{t("usage_title")}</h2>
+        <p>{t("usage_description_one")}</p>
+        <p>{t("usage_description_two")}</p>
       </section>
-      <section>
+      <section aria-labelledby="map-section-title">
         <Map />
       </section>
     </main>

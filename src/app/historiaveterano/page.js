@@ -20,14 +20,18 @@ export default function HistoriaVeterano() {
   const Map = useMemo(
     () =>
       dynamic(() => import("./Map/Map"), {
-        loading: () => <p>A map is loading</p>,
+        loading: () => <p>{t("map_loading")}</p>,
         ssr: false,
       }),
-    []
+    [t]
   );
 
   if (!veteran) {
-    return <p>{t("loading")}</p>;
+    return (
+      <p role="status" aria-live="polite">
+        {t("loading")}
+      </p>
+    );
   }
 
   const {

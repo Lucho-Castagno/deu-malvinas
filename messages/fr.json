@@ -18,7 +18,7 @@
     "about": "À Propos",
     "about_title": "À propos de nous",
     "configuration": "Paramètres",
-    "configurations_title": "Paramètres de la page (langues)"
+    "configuration_title": "Paramètres de la page (langues)"
   },
   "Footer": {
     "title": "Mémoires de",
@@ -53,13 +53,13 @@
     "team_title": "Notre équipe est composée de:",
     "contact": "Contact",
     "contact_to": "Si vous avez des questions ou souhaitez en savoir plus sur le projet, vous pouvez nous contacter à ",
-    "comments":"Commentaires",
-    "leave_comment":"Partagez vos avis sur notre page et les héros des Malouines. Votre message nous est très précieux!",
-    "leave_name":"Nom:",
-    "leave_email":"E-mail:",
-    "leave_comments":"Commentaire:",
-    "leave_recentscomments":"Commentaires récents",
-    "send":"Envoyer"
+    "comments": "Commentaires",
+    "leave_comment": "Partagez vos avis sur notre page et les héros des Malouines. Votre message nous est très précieux!",
+    "leave_name": "Nom:",
+    "leave_email": "E-mail:",
+    "leave_comments": "Commentaire:",
+    "leave_recentscomments": "Commentaires récents",
+    "send": "Envoyer"
   },
   "MapComponent": {
     "search_placeholder": "Rechercher par nom",
@@ -72,18 +72,21 @@
     "place_of_birth": "Lieu de naissance:",
     "place_of_birth_aria": "Lieu de naissance",
     "date_of_birth": "Date de naissance:",
-    "date_of_birth_aria": "Date de naissance"
+    "date_of_birth_aria": "Date de naissance",
+    "no_results": "Aucun résultat..."
   },
   "MapPage": {
     "title": "Carte interactive",
     "description": "La carte montre la géolocalisation correspondant au lieu de décès de chacun des soldats tombés pendant la guerre des Malouines.",
     "usage_title": "Comment utiliser la carte",
     "usage_description_one": "En cliquant sur l'emplacement de l'un des tombés, vous pouvez accéder à un résumé de la biographie incluant le nom et le prénom, le grade, le lieu et la date de naissance.",
-    "usage_description_two": "Il est également possible de rechercher par prénom et/ou nom de famille pour les localiser rapidement."
+    "usage_description_two": "Il est également possible de rechercher par prénom et/ou nom de famille pour les localiser rapidement.",
+    "map_loading": "Chargement de la carte...",
+    "map_error": "Une erreur s'est produite lors du chargement de la carte..."
   },
   "HomePage": {
     "text_one": "Découvrez la mémoire vivante des héros des Malouines. Explorez cette ressource pour une compréhension plus approfondie d'un événement historique crucial pour l'Argentine.",
-    "text_two":"Grâce à des cartes détaillées et des profils individuels, vous pourrez vous immerger dans les expériences des anciens combattants et mieux comprendre le courage et la résilience dont ils ont fait preuve. Parcourez les histoires de ces héros, découvrez leurs voyages et rendez hommage à leur héritage immortel.",
+    "text_two": "Grâce à des cartes détaillées et des profils individuels, vous pourrez vous immerger dans les expériences des anciens combattants et mieux comprendre le courage et la résilience dont ils ont fait preuve. Parcourez les histoires de ces héros, découvrez leurs voyages et rendez hommage à leur héritage immortel.",
     "image_one_alt": "Présentation de la carte de la mémoire vivante des Héros des Malouines",
     "title": "Vétérans qui ont combattu aux Malouines",
     "image_two_alt": "Logo de représentation d'un vétéran",
@@ -93,14 +96,21 @@
     "image_five_alt": "Camp d'une patrouille près de l'aéroport de la ville Télam 162",
     "conflict_title": "Introduction au conflit",
     "image_six_alt": "Logo de représentation d'un vétéran et du drapeau argentin",
-    "conflict_description": "Le conflit armé entre l'Argentine et le Royaume-Uni pour les îles Malouines en 1982 a entraîné la perte tragique de nombreuses vies. Dans notre pays, la guerre des Malouines est considérée comme un événement crucial qui a marqué un avant et un après dans l'histoire, provoquant une grande agitation sociale et politique, et laissant une empreinte profonde dans l'identité nationale. La mémoire des soldats tombés pendant la guerre est d'une grande importance pour les Argentins, étant considérée comme un symbole de la lutte pour la souveraineté et la dignité nationale."
+    "conflict_description": "Le conflit armé entre l'Argentine et le Royaume-Uni pour les îles Malouines en 1982 a entraîné la perte tragique de nombreuses vies. Dans notre pays, la guerre des Malouines est considérée comme un événement crucial qui a marqué un avant et un après dans l'histoire, provoquant une grande agitation sociale et politique, et laissant une empreinte profonde dans l'identité nationale. La mémoire des soldats tombés pendant la guerre est d'une grande importance pour les Argentins, étant considérée comme un symbole de la lutte pour la souveraineté et la dignité nationale.",
+    "image_one_describedby": "Présentation de la carte des Malouines comme exemple de ce qui peut être trouvé dans la section Carte. La carte est centrée sur les deux îles qui composent les Malouines, avec des marqueurs de soldats représentant les lieux où ils sont décédés.",
+    "image_two_describedby": "Un dessin servant de logo de section représentant un soldat bandé.",
+    "image_three_describedby": "L'image montre quatre soldats argentins. Celui tout à gauche est armé d'un fusil FAL, standard de l'époque. Les trois autres tiennent un mortier et son obus. Tous sourient. À l'arrière-plan, on peut voir des montagnes et la mer.",
+    "image_four_describedby": "L'image montre trois soldats argentins. Tous tiennent leurs fusils FAL, standard de l'époque. Ils sont bien habillés et se trouvent sous le toit d'un abri improvisé.",
+    "image_five_describedby": "L'image montre un soldat argentin bien habillé. Il tient une Grease Gun et est entouré de cinq tentes et de neige.",
+    "image_six_describedby": "Un dessin servant de logo de section représentant un soldat à gauche effectuant un salut militaire, et à droite, le drapeau argentin en forme d'île."
   },
   "VeteransPage": {
     "title": "Histoires de valeur aux Malouines",
     "search_placeholder": "Rechercher par nom",
     "search_aria": "Tapez le nom du vétéran ici pour faciliter la recherche",
     "more_info_btn_aria": "Plus d'informations sur {name}",
-    "more_info_btn": "Plus d'informations"
+    "more_info_btn": "Plus d'informations",
+    "no_results": "Aucun résultat..."
   },
   "VeteranHistoryPage": {
     "loading": "Chargement des données du vétéran...",
@@ -123,7 +133,8 @@
     "place_of_birth": "Lieu de naissance",
     "combat_role": "Rôle de combat",
     "date_of_enlistment": "Date d'enrôlement",
-    "date_of_promotion": "Date de promotion"
+    "date_of_promotion": "Date de promotion",
+    "map_loading": "Chargement de la carte..."
   },
   "ResolutionsPage": {
     "title": "Résolutions de l'ONU",

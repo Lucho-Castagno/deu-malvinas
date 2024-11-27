@@ -18,7 +18,7 @@
     "about": "Sobre Nós",
     "about_title": "Sobre nós",
     "configuration": "Configuração",
-    "configurations_title": "Configurações da página (idiomas)"
+    "configuration_title": "Configurações da página (idiomas)"
   },
   "Footer": {
     "title": "Memórias de",
@@ -53,13 +53,13 @@
     "team_title": "Nossa equipe é composta por:",
     "contact": "Contato",
     "contact_to": "Se você tiver dúvidas ou quiser saber mais sobre o projeto, pode nos contatar em ",
-    "comments":"Comentários",
-    "leave_comment":"Compartilhe suas opiniões sobre nossa página e os heróis das Malvinas. Sua mensagem é muito valiosa para nós!",
-    "leave_name":"Nome:",
-    "leave_email":"E-mail:",
-    "leave_comments":"Comente:",
-    "leave_recentscomments":"Comentários Recentes",
-    "send":"Enviar"
+    "comments": "Comentários",
+    "leave_comment": "Compartilhe suas opiniões sobre nossa página e os heróis das Malvinas. Sua mensagem é muito valiosa para nós!",
+    "leave_name": "Nome:",
+    "leave_email": "E-mail:",
+    "leave_comments": "Comente:",
+    "leave_recentscomments": "Comentários Recentes",
+    "send": "Enviar"
   },
   "MapComponent": {
     "search_placeholder": "Buscar por nome",
@@ -72,18 +72,21 @@
     "place_of_birth": "Local de nascimento:",
     "place_of_birth_aria": "Local de nascimento",
     "date_of_birth": "Data de nascimento:",
-    "date_of_birth_aria": "Data de nascimento"
+    "date_of_birth_aria": "Data de nascimento",
+    "no_results": "Sem resultados..."
   },
   "MapPage": {
     "title": "Mapa interativo",
     "description": "O mapa mostra a geolocalização correspondente ao local de morte de cada um dos soldados caídos durante a Guerra das Malvinas.",
     "usage_title": "Como usar o mapa",
     "usage_description_one": "Clicando na localização de um dos caídos, você pode acessar um resumo da biografia que inclui sobrenome e nome, patente, local e data de nascimento.",
-    "usage_description_two": "Também é possível buscar pelo nome e/ou sobrenome para localizá-los rapidamente."
+    "usage_description_two": "Também é possível buscar pelo nome e/ou sobrenome para localizá-los rapidamente.",
+    "map_loading": "Carregando o mapa...",
+    "map_error": "Ocorreu um erro ao carregar o mapa..."
   },
   "HomePage": {
     "text_one": "Descubra a memória viva dos heróis das Malvinas. Explore este recurso para uma compreensão mais profunda de um evento histórico crucial para a Argentina.",
-    "text_two":"Através de mapas detalhados e perfis individuais, você poderá mergulhar nas experiências dos veteranos, compreendendo melhor a coragem e resiliência que demonstraram. Navegue pelas histórias desses heróis, conheça suas jornadas e preste homenagem ao seu legado imortal.",
+    "text_two": "Através de mapas detalhados e perfis individuais, você poderá mergulhar nas experiências dos veteranos, compreendendo melhor a coragem e resiliência que demonstraram. Navegue pelas histórias desses heróis, conheça suas jornadas e preste homenagem ao seu legado imortal.",
     "image_one_alt": "Apresentação do mapa da memória viva dos Heróis das Malvinas",
     "title": "Veteranos que lutaram nas Malvinas",
     "image_two_alt": "Logo de representação de um veterano",
@@ -93,14 +96,21 @@
     "image_five_alt": "Acampamento de uma patrulha perto do aeroporto da cidade Télam 162",
     "conflict_title": "Introdução ao conflito",
     "image_six_alt": "Logo de representação de um veterano e a bandeira da Argentina",
-    "conflict_description": "O conflito armado entre Argentina e Reino Unido pelas Ilhas Malvinas em 1982 resultou na trágica perda de muitas vidas. Em nosso país, a Guerra das Malvinas é considerada um evento crucial que marcou um antes e um depois na história, causando uma grande comoção social e política, e deixando uma profunda marca na identidade nacional. A memória dos soldados caídos na guerra é de grande importância para os argentinos, sendo considerada um símbolo da luta pela soberania e dignidade nacional."
+    "conflict_description": "O conflito armado entre Argentina e Reino Unido pelas Ilhas Malvinas em 1982 resultou na trágica perda de muitas vidas. Em nosso país, a Guerra das Malvinas é considerada um evento crucial que marcou um antes e um depois na história, causando uma grande comoção social e política, e deixando uma profunda marca na identidade nacional. A memória dos soldados caídos na guerra é de grande importância para os argentinos, sendo considerada um símbolo da luta pela soberania e dignidade nacional.",
+    "image_one_describedby": "Apresentação do mapa das Malvinas como exemplo do que pode ser encontrado na seção Mapa. O mapa está centrado nas duas ilhas que compõem as Malvinas, com marcadores de soldados representando os locais onde faleceram.",
+    "image_two_describedby": "Um desenho que serve como logotipo da seção, representando um soldado enfaixado.",
+    "image_three_describedby": "A imagem mostra quatro soldados argentinos. O da extrema esquerda está armado com um rifle FAL, padrão da época. Os outros três estão segurando um morteiro e seu cartucho. Todos estão sorrindo. Ao fundo, é possível ver montanhas e o mar.",
+    "image_four_describedby": "A imagem mostra três soldados argentinos. Todos estão segurando seus rifles FAL, padrão da época. Estão bem agasalhados e debaixo do teto de um abrigo improvisado.",
+    "image_five_describedby": "A imagem mostra um soldado argentino bem agasalhado. Ele está segurando uma Grease Gun e está cercado por cinco barracas e neve.",
+    "image_six_describedby": "Um desenho que serve como logotipo da seção, representando um soldado à esquerda fazendo uma saudação militar, e à direita, a bandeira argentina em forma de ilha."
   },
   "VeteransPage": {
     "title": "Histórias de valor nas Malvinas",
     "search_placeholder": "Buscar por nome",
     "search_aria": "Digite o nome do veterano aqui para facilitar a busca",
     "more_info_btn_aria": "Mais informações sobre {name}",
-    "more_info_btn": "Mais informações"
+    "more_info_btn": "Mais informações",
+    "no_results": "Sem resultados..."
   },
   "VeteranHistoryPage": {
     "loading": "Carregando dados do veterano...",
@@ -123,7 +133,8 @@
     "place_of_birth": "Local de nascimento",
     "combat_role": "Função de combate",
     "date_of_enlistment": "Data de alistamento",
-    "date_of_promotion": "Data de promoção"
+    "date_of_promotion": "Data de promoção",
+    "map_loading": "Carregando o mapa..."
   },
   "ResolutionsPage": {
     "title": "Resoluções da ONU",

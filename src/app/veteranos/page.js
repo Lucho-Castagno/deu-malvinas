@@ -60,59 +60,71 @@ export default function VeteranosPage() {
   };
 
   return (
-    <main className="container my-5 p-5" role="main">
-      <h1 className={`text-center ${styles.titulo} mb-5`}>{t("title")}</h1>
+    <main
+      className="container my-5 p-5"
+      role="main"
+      aria-labelledby="page-title"
+    >
+      <h1 id="page-title" className={`text-center ${styles.titulo} mb-5`}>
+        {t("title")}
+      </h1>
       <input
         type="text"
         placeholder={t("search_placeholder")}
-        aria-label={t('search_aria')}
+        aria-label={t("search_aria")}
         className={`form-control mb-4 ${styles.searchInput}`}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <div className="row">
-        {filteredVeterans.map((veteran, index) => {
-          const props = veteran.properties;
-          const photoUrl =
-            props && props.Foto
-              ? `${baseUrl}${processUrl(props.Foto)}`
-              : defaultPhotoUrl;
+        {filteredVeterans.length > 0 ? (
+          filteredVeterans.map((veteran, index) => {
+            const props = veteran.properties;
+            const photoUrl =
+              props && props.Foto
+                ? `${baseUrl}${processUrl(props.Foto)}`
+                : defaultPhotoUrl;
 
-          return (
-            <div className="col-md-6 col-lg-3 mb-4" key={index}>
-              <div className="card h-100 bg-lightyellow p-3">
-                {props && (
-                  <>
-                    <div className="w-100 d-flex justify-content-center align-items-center">
-                      <div style={{ width: "128px", height: "128px" }}>
-                        <Image
-                          src={photoUrl}
-                          className="rounded-circle"
-                          alt={props.Nombre}
-                          width={128}
-                          height={128}
-                        />
+            return (
+              <div className="col-md-6 col-lg-3 mb-4" key={index}>
+                <div className="card h-100 bg-lightyellow p-3" role="article">
+                  {props && (
+                    <>
+                      <div className="w-100 d-flex justify-content-center align-items-center">
+                        <div style={{ width: "128px", height: "128px" }}>
+                          <Image
+                            src={photoUrl}
+                            className="rounded-circle"
+                            alt={`${props.Nombre}, ${props.Escalafon}`}
+                            width={128}
+                            height={128}
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className="card-body">
-                      <h5 className="card-title">{props.Nombre}</h5>
-                      <p className="card-text">{props.Escalafon}</p>
-                      <button
-                        className="btn btn-success"
-                        aria-label={t("more_info_btn_aria", {
-                          name: props.Nombre,
-                        })}
-                        onClick={() => handleMoreInfo(veteran)}
-                      >
-                        {t("more_info_btn")}
-                      </button>
-                    </div>
-                  </>
-                )}
+                      <div className="card-body">
+                        <h5 className="card-title">{props.Nombre}</h5>
+                        <p className="card-text">{props.Escalafon}</p>
+                        <button
+                          className="btn btn-success"
+                          aria-label={t("more_info_btn_aria", {
+                            name: props.Nombre,
+                          })}
+                          onClick={() => handleMoreInfo(veteran)}
+                        >
+                          {t("more_info_btn")}
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })
+        ) : (
+          <p role="alert" className="text-center">
+            {t("no_results")}
+          </p>
+        )}
       </div>
     </main>
   );

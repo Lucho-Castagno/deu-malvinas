@@ -10,7 +10,11 @@ export default function Home() {
       <section className={`container-fluid ${styles.topSection}`}>
         <div className="row">
           <div className="col-md-6 d-flex align-items-center">
-            <p className="text-md-start text-center">{t("text_one")}<br />{t("text_two")}</p>
+            <p className="text-md-start text-center">
+              {t("text_one")}
+              <br />
+              {t("text_two")}
+            </p>
           </div>
           <div className="col-md-6">
             <Image
@@ -20,12 +24,19 @@ export default function Home() {
               width={600}
               height={400}
               className="embed-responsive-item"
+              aria-describedby="image_one_describedby"
             />
+            <p id="image_one_describedby" className="sr-only">
+              {t("image_one_describedby")}
+            </p>
           </div>
         </div>
       </section>
-      <section className={`container text-center m-5`}>
-        <h1 className={`subtitle`} tabIndex={0}>
+      <section
+        className={`container text-center m-5`}
+        aria-labelledby="title-two"
+      >
+        <h1 id="title-two" className={`subtitle`} tabIndex={0}>
           {t("title")}
           <Image
             src="/soldado.png"
@@ -33,7 +44,11 @@ export default function Home() {
             width={200}
             height={200}
             className={styles.subtitleImage}
+            aria-describedby="image_two_describedby"
           />
+          <p id="image_two_describedby" className="sr-only">
+            {t("image_two_describedby")}
+          </p>
         </h1>
       </section>
       <section
@@ -51,7 +66,11 @@ export default function Home() {
               width={300}
               height={300}
               className={styles.photo}
+              aria-describedby="image_three_describedby"
             />
+            <p id="image_three_describedby" className="sr-only">
+              {t("image_three_describedby")}
+            </p>
           </div>
           <div className="col-lg-4">
             <Image
@@ -60,7 +79,11 @@ export default function Home() {
               width={300}
               height={300}
               className={styles.photo}
+              aria-describedby="image_four_describedby"
             />
+            <p id="image_four_describedby" className="sr-only">
+              {t("image_four_describedby")}
+            </p>
           </div>
           <div className="col-lg-4">
             <Image
@@ -69,7 +92,11 @@ export default function Home() {
               width={300}
               height={300}
               className={styles.photo}
+              aria-describedby="image_five_describedby"
             />
+            <p id="image_five_describedby" className="sr-only">
+              {t("image_five_describedby")}
+            </p>
           </div>
         </div>
       </section>
@@ -88,7 +115,11 @@ export default function Home() {
               width={200}
               height={200}
               className={styles.finalImage}
+              aria-describedby="image_six_describedby"
             />
+            <p id="image_six_describedby" className="sr-only">
+              {t("image_six_describedby")}
+            </p>
           </div>
           <div className="col-md-8">
             <p>{t("conflict_description")}</p>

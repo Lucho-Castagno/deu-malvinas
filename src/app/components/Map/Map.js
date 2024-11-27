@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { MapContainer, Marker, TileLayer, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility";
@@ -13,9 +13,9 @@ function CenterMapOnMarker({ position, resetPosition }) {
 
   useEffect(() => {
     if (position) {
-      map.setView(position, map.getZoom());
+      map.flyTo(position, map.getZoom(), { animate: true });
     } else if (resetPosition) {
-      map.setView(resetPosition, map.getZoom());
+      map.flyTo(resetPosition, map.getZoom(), { animate: true });
     }
   }, [position, map, resetPosition]);
 
@@ -30,11 +30,15 @@ export default function Map() {
   const data = useGeoJsonData();
   const t = useTranslations("MapComponent");
 
-  const custom_marker = L.icon({
-    iconUrl: "soldado-marker.png",
-    iconSize: [40, 40],
-    iconAnchor: [20, 5],
-  });
+  const custom_marker = useMemo(
+    () =>
+      L.icon({
+        iconUrl: "soldado-marker.png",
+        iconSize: [40, 40],
+        iconAnchor: [20, 5],
+      }),
+    []
+  );
 
   // Handle search
   useEffect(() => {
@@ -72,6 +76,11 @@ export default function Map() {
           aria-label={t("search_aria")}
           className={`form-control mb-4 ${styles.searchInput}`}
         />
+        {searchTerm && filteredData.length === 0 && (
+          <p role="status" className="text-center">
+            {t("no_results")}
+          </p>
+        )}
       </div>
       <MapContainer
         center={initialCenter}

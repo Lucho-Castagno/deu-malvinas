@@ -28,8 +28,8 @@ export default function EventosPage() {
   */
 
   return (
-    <main className="container my-5 py-5" role="main">
-      <h1 className={`text-center subtitle mb-5`}>{t("title")}</h1>
+    <main className="container my-5 py-5" role="main" aria-describedby="events-title">
+      <h1 id="events-title" className={`text-center subtitle mb-5`}>{t("title")}</h1>
       <p>{t("title_paragraph")}</p>
       <h2 className="titulo">{t("second_title")}</h2>
       <p>{t("second_title_paragraph_one")}</p>

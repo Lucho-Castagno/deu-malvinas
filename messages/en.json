@@ -18,7 +18,7 @@
     "about": "About Us",
     "about_title": "About us",
     "configuration": "Settings",
-    "configurations_title": "Page settings (languages)"
+    "configuration_title": "Page settings (languages)"
   },
   "Footer": {
     "title": "Memories of",
@@ -53,13 +53,13 @@
     "team_title": "Our team consists of:",
     "contact": "Contact",
     "contact_to": "If you have any questions or want to know more about the project, you can contact us at ",
-    "comments":"Comments",
-    "leave_comment":"Share your opinions about our website and the heroes of Malvinas. Your message is very valuable to us! ",
-    "leave_name":"Name",
-    "leave_email":"E-mail:",
-    "leave_comments":"Comment:",
-    "leave_recentscomments":"Recent Comments",
-    "send":"Send"
+    "comments": "Comments",
+    "leave_comment": "Share your opinions about our website and the heroes of Malvinas. Your message is very valuable to us! ",
+    "leave_name": "Name",
+    "leave_email": "E-mail:",
+    "leave_comments": "Comment:",
+    "leave_recentscomments": "Recent Comments",
+    "send": "Send"
   },
   "MapComponent": {
     "search_placeholder": "Search by name",
@@ -72,18 +72,21 @@
     "place_of_birth": "Place of birth:",
     "place_of_birth_aria": "Place of birth",
     "date_of_birth": "Date of birth:",
-    "date_of_birth_aria": "Date of birth"
+    "date_of_birth_aria": "Date of birth",
+    "no_results": "No results..."
   },
   "MapPage": {
     "title": "Interactive map",
     "description": "The map shows the geolocation corresponding to the place of death of each of the fallen soldiers during the Malvinas War.",
     "usage_title": "How to use the map",
     "usage_description_one": "By clicking on the location of one of the fallen, you can access a summary of the biographical sketch including surname and name, rank, place and date of birth.",
-    "usage_description_two": "It is also possible to search by first and/or last name to locate them quickly."
+    "usage_description_two": "It is also possible to search by first and/or last name to locate them quickly.",
+    "map_loading": "Loading map...",
+    "map_error": "There was an error loading the map..."
   },
   "HomePage": {
     "text_one": "Discover the living memory of the Malvinas heroes. Explore this resource for a deeper understanding of a crucial historical event for Argentina.",
-    "text_two":"Through detailed maps and individual profiles, you can immerse yourself in the experiences of veterans, gaining a better understanding of the courage and resilience they demonstrated. Navigate the stories of these heroes, learn about their journeys, and pay tribute to their immortal legacy.",
+    "text_two": "Through detailed maps and individual profiles, you can immerse yourself in the experiences of veterans, gaining a better understanding of the courage and resilience they demonstrated. Navigate the stories of these heroes, learn about their journeys, and pay tribute to their immortal legacy.",
     "image_one_alt": "Map presentation of the living memory of the Malvinas Heroes",
     "title": "Veterans who fought in Malvinas",
     "image_two_alt": "Representation logo of a veteran",
@@ -93,14 +96,21 @@
     "image_five_alt": "Camp of a patrol near the airport of the city Télam 162",
     "conflict_title": "Introduction to the conflict",
     "image_six_alt": "Representation logo of a veteran and the Argentine flag",
-    "conflict_description": "The armed conflict between Argentina and the United Kingdom over the Falkland Islands in 1982 resulted in the tragic loss of many lives. In our country, the Falklands War is considered a crucial event that marked a before and after in history, causing great social and political upheaval, and leaving a deep mark on national identity. The memory of the fallen soldiers in the war is of great importance to Argentines, being considered a symbol of the struggle for sovereignty and national dignity."
+    "conflict_description": "The armed conflict between Argentina and the United Kingdom over the Falkland Islands in 1982 resulted in the tragic loss of many lives. In our country, the Falklands War is considered a crucial event that marked a before and after in history, causing great social and political upheaval, and leaving a deep mark on national identity. The memory of the fallen soldiers in the war is of great importance to Argentines, being considered a symbol of the struggle for sovereignty and national dignity.",
+    "image_one_describedby": "Presentation of the map of the Falklands as an example of what can be found in the Map section. The map is centered on the two islands that make up the Falklands, with markers of soldiers representing the places where they passed away.",
+    "image_two_describedby": "A drawing serving as a section logo that represents a bandaged soldier.",
+    "image_three_describedby": "The image depicts four Argentine soldiers. The one on the far left is armed with a FAL rifle, the standard issue of the time. The other three are holding a mortar and its shell. All are smiling. Mountains and the sea can be seen in the background.",
+    "image_four_describedby": "The image depicts three Argentine soldiers. All are holding their FAL rifles, the standard issue of the time. They are heavily dressed and standing under the roof of an improvised shelter.",
+    "image_five_describedby": "The image depicts a heavily dressed Argentine soldier. He is holding a Grease Gun and is surrounded by five tents and snow.",
+    "image_six_describedby": "A drawing serving as a section logo that represents a soldier on the left performing a military salute, and on the right, the Argentine flag in the shape of an island."
   },
   "VeteransPage": {
     "title": "Stories of Valor in the Falklands",
     "search_placeholder": "Search by name",
     "search_aria": "Type the veteran's name here to facilitate the search",
     "more_info_btn_aria": "More information about {name}",
-    "more_info_btn": "More information"
+    "more_info_btn": "More information",
+    "no_results": "No results..."
   },
   "VeteranHistoryPage": {
     "loading": "Loading veteran data...",
@@ -123,7 +133,8 @@
     "place_of_birth": "Place of Birth",
     "combat_role": "Combat Role",
     "date_of_enlistment": "Date of Enlistment",
-    "date_of_promotion": "Date of Promotion"
+    "date_of_promotion": "Date of Promotion",
+    "map_loading": "Loading map..."
   },
   "ResolutionsPage": {
     "title": "UN Resolutions",
