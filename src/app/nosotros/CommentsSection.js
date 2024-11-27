@@ -25,7 +25,7 @@ const CommentsSection = () => {
 
   return (
     <div aria-labelledby="comments-section">
-      <form onSubmit={handleSubmit} aria-labelledby="comment-form">
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">{t("leave_name")}</label>
           <input
@@ -34,7 +34,6 @@ const CommentsSection = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            aria-required="true"
           />
         </div>
         <div>
@@ -45,7 +44,6 @@ const CommentsSection = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            aria-required="true"
           />
         </div>
         <div>
@@ -55,14 +53,9 @@ const CommentsSection = () => {
             value={comment}
             onChange={(e) => setComment(e.target.value)}
             required
-            aria-required="true"
           ></textarea>
         </div>
-        <button
-          className="btn btn-success"
-          aria-label={t("send")}
-          type="submit"
-        >
+        <button className="btn btn-success" type="submit">
           {t("send")}
         </button>
       </form>
