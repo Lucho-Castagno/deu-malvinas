@@ -116,7 +116,7 @@
     "loading": "Loading veteran data...",
     "title": "Additional Information",
     "see_more_btn": "See combatant's review",
-    "see_more_btn_aria": "More information about {name}",
+    "see_more_btn_aria": "More information about {name} (PDF)",
     "rank": "Rank",
     "document": "Document",
     "grade": "Grade",

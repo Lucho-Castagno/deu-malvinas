@@ -116,7 +116,7 @@
     "loading": "Carregando dados do veterano...",
     "title": "Informações adicionais",
     "see_more_btn": "Ver resenha do combatente",
-    "see_more_btn_aria": "Mais informações sobre {name}",
+    "see_more_btn_aria": "Mais informações sobre {name} (PDF)",
     "rank": "Escalão",
     "document": "Documento",
     "grade": "Grau",
